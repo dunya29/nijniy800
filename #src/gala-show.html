@@ -11,11 +11,13 @@
     		<main>
                 <div class="main__inner galashow">
                     <section class="galashow-section galashow-general-section" id="general">
-                        <video id="general_video" width="1920" height="936" class="galashow-general-video" preload="auto" loop="true" autoplay="true" muted="true" playsinline="true" poster="static/videos/galashow/large/general-bg.jpg">
-                            <source id="ogv" src="static/videos/galashow/large/video.ogv" type="video/ogv;">
-                            <source id="mp4_265" src="static/videos/galashow/large/video.mp4" type="video/mp4;">
-                            <source id="mp4_264" src="static/videos/galashow/large/video-265.mp4" type="video/mp4;">
-                            <source id="webm" src="static/videos/galashow/large/video.webm" type="video/webm;">
+                        <video width="1920" height="970" id="general_video" class="galashow-general-video" preload="auto" loop="true" autoplay="true" muted="true" playsinline="true" poster="static/videos/galashow/large/general-bg.jpg">
+                            <source src="static/videos/galashow/large/video.webm" type="video/webm;" media="(min-width: 1280px)">                           
+                            <source src="static/videos/galashow/large/video.mp4" type="video/mp4;" media="(min-width: 1280px)">
+                            <source src="static/videos/galashow/medium/video.webm" type="video/webm;" media="(min-width: 1024px)">                           
+                            <source src="static/videos/galashow/medium/video.mp4" type="video/mp4;" media="(min-width: 1024px)">
+                            <source src="static/videos/galashow/small/video.webm" type="video/webm;">                           
+                            <source src="static/videos/galashow/small/video.mp4" type="video/mp4;">
                         </video>
                         <a href="https://youtu.be/ivDfghj9aBA" target="_blank" class="galashow-general-button orange-btn tourist-btn">
                             <span>Смотреть запись трансляции гала-шоу</span>

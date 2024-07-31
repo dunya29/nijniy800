@@ -52,8 +52,8 @@ function changeVideos() {
       size = "small";
     }
   }
-
-  template =
+  $(".galashow-general-video").attr("poster",`static/videos/galashow/${size}/general-bg.jpg`)
+  /* template =
     `
    <video id="general_video" width="1920" height="970" class="galashow-general-video" preload="auto" loop autoplay muted playsinline poster="static/videos/galashow/${size}/general-bg.jpg">
       <source id="ogv" src="static/videos/galashow/${size}/video.ogv" type="video/ogv;">
@@ -71,7 +71,7 @@ function changeVideos() {
   else {
     wWidth = 0;
   }
-
+ */
 }
 
 function calcTopOffset() {
@@ -365,7 +365,7 @@ ymaps.ready(function () {
     e.preventDefault();
     projectsMap.geoObjects.each(function (el, i) {
       el.options.set({
-        iconImageHref: '/static/img/galashow/project-map-marker.svg',
+        iconImageHref: 'static/img/galashow/project-map-marker.svg',
       })
     });
     $(".areas-map-info").fadeOut(300);
@@ -461,7 +461,7 @@ function initProjectsMap() {
       options: {
         hideIconOnBalloonOpen: false,
         iconLayout: 'default#image',
-        iconImageHref: '/static/img/galashow/project-map-marker.svg',
+        iconImageHref: 'static/img/galashow/project-map-marker.svg',
         iconImageSize: [30, 42],
         iconImageOffset: [-15, -42],
         hintLayout: HintLayout
@@ -493,12 +493,12 @@ function initProjectsMap() {
 
     projectsMap.geoObjects.each(function (el, i) {
       el.options.set({
-        iconImageHref: '/static/img/galashow/project-map-marker.svg',
+        iconImageHref: 'static/img/galashow/project-map-marker.svg',
       })
     });
 
     currMarker.options.set({
-      iconImageHref: '/static/img/galashow/project-map-marker_orange.svg',
+      iconImageHref: 'static/img/galashow/project-map-marker_orange.svg',
     });
   });
 

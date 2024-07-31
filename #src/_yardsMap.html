@@ -161,21 +161,19 @@
   ]
 </script>
 <script> 
-    function init() {
-      let map = new ymaps.Map('yardsMap', {
-        center: [56.323886, 44.003484],
+  function init() {
+    let map = new ymaps.Map('yardsMap', {
+    center: [56.323886, 44.003484],
 		controls: [],
 		zoom: 11,
-		balloonPanelMaxMapArea: 0,
 		draggable: "true",
       });
       let collection = new ymaps.GeoObjectCollection(null, {
-          iconLayout: 'default#image',
-          iconImageHref: 'static/img/yards/yard-marker.svg',
-		  iconImageSize: [26, 33],
-          iconImageOffset: [-13, -33],
-          hideIconOnBalloonOpen: false,
-          balloonOffset: [60, -12],
+        iconLayout: 'default#image',
+        iconImageHref: 'static/img/yards/yard-marker.svg',
+		    iconImageSize: [26, 33],
+        iconImageOffset: [-13, -33],
+        balloonOffset: [60, -12],
 			
       });
       yardsMapArr.forEach(item => {

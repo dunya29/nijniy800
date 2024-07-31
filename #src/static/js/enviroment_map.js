@@ -39,7 +39,7 @@ ymaps.ready(init);
                     preset: 'islands#icon',
                      iconLayout: 'default#image',
                     // Изображение иконки метки.
-                    iconImageHref: th_category.objects[i].isRestored ? '/static/img/placemark-icon-green.svg' : '/static/img/placemark-icon-orange.svg',
+                    iconImageHref: th_category.objects[i].isRestored ? 'static/img/placemark-icon-green.svg' : 'static/img/placemark-icon-orange.svg',
                     // Размеры метки.
                     iconImageSize: [23, 37],
                 }));

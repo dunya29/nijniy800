@@ -5,7 +5,7 @@ ymaps.ready(function() {
 		e.preventDefault();
 		projectsMap.geoObjects.each(function(el, i) {
 			el.options.set({
-				iconImageHref: '/static/img/ecostart/map-marker.svg',
+				iconImageHref: 'static/img/ecostart/map-marker.svg',
 			})
 		});
 		$(".eco-map-info").fadeOut(300);
@@ -54,7 +54,7 @@ function initProjectsMap() {
 			options: {
 				hideIconOnBalloonOpen: false,
 				iconLayout: 'default#image',
-				iconImageHref: '/static/img/ecostart/map-marker.svg',
+				iconImageHref: 'static/img/ecostart/map-marker.svg',
 				iconImageSize: [30, 42],
 				iconImageOffset: [-15, -42],
 				hintLayout: HintLayout
@@ -187,11 +187,11 @@ function initProjectsMap() {
 
 		projectsMap.geoObjects.each(function(el, i) {
 			el.options.set({
-				iconImageHref: '/static/img/ecostart/map-marker.svg',
+				iconImageHref: 'static/img/ecostart/map-marker.svg',
 			})
 		});
 		currMarker.options.set({
-			iconImageHref: '/static/img/ecostart/map-marker-active.svg',
+			iconImageHref: 'static/img/ecostart/map-marker-active.svg',
 		});
 	});
 }

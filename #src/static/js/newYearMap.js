@@ -5,7 +5,7 @@ ymaps.ready(function() {
 		e.preventDefault();
 		projectsMap.geoObjects.each(function(el, i) {
 			el.options.set({
-				iconImageHref: '/static/img/newYear/map-marker-def.svg',
+				iconImageHref: 'static/img/newYear/map-marker-def.svg',
 			})
 		});
 		$(".eco-map-info").fadeOut(300);
@@ -53,7 +53,7 @@ function initProjectsMap() {
 			options: {
 				hideIconOnBalloonOpen: false,
 				iconLayout: 'default#image',
-				iconImageHref: '/static/img/newYear/map-marker-def.svg',
+				iconImageHref: 'static/img/newYear/map-marker-def.svg',
 				iconImageSize: [30, 42],
 				iconImageOffset: [-15, -42],
 				hintLayout: HintLayout
@@ -107,11 +107,11 @@ function initProjectsMap() {
 
 		projectsMap.geoObjects.each(function(el, i) {
 			el.options.set({
-				iconImageHref: '/static/img/newYear/map-marker-def.svg',
+				iconImageHref: 'static/img/newYear/map-marker-def.svg',
 			})
 		});
 		currMarker.options.set({
-			iconImageHref: '/static/img/newYear/map-marker.svg',
+			iconImageHref: 'static/img/newYear/map-marker.svg',
 		});
 	});
 }

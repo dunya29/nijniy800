@@ -617,6 +617,12 @@ a.footer__link.footer__links-head {
 }
 .pageup {
     z-index: 1;
+    @media screen and (max-width: 767px) {
+        height: 40px;
+        width: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 .about800-content__video .record-section__button {
     width: 8.5%;
@@ -639,3 +645,66 @@ a.footer__link.footer__links-head {
         }
     }
 }
+.pp {
+    @media only screen and (max-width: 767px) {
+        .pp-content.pp-content_simple {
+            padding-top: 32px;
+        }
+        .title__name {
+            padding-right: 30px;
+        }
+        .close_btn {
+            width: 100%;
+            width: 100%; 
+            max-width: 320px;
+            height: auto;
+            justify-content: center;
+        }
+    }
+}
+.galashow-general-button.tourist-btn {
+    &:hover {
+        &:before {
+            transform: scale(1.05, 1);
+        }
+    }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+    .galashow-general-section {
+        height: 1400px;
+    }
+}
+@media (min-width: 1150px) and (max-width: 1280px) {
+    .galashow-general-section {
+        height: 1850px;
+    }
+}
+.eventpass-modal {
+    @media only screen and (max-width: 767px) {
+        overflow: hidden;
+        &__content {
+            height: 100%;
+            overflow: auto!important;
+        }
+    }
+}
+.success-container__title {
+    @media only screen and (max-width: 767px) {
+        font-size: 40px;
+    }
+}
+.pp {
+    width: 100%;
+}
+.pp-partner {
+    .pp__content, .pp-content {
+        position: static;
+        padding-top: 60px;
+    }
+}
+.ecostart-events {
+    .title {
+        flex-wrap: nowrap;
+    }
+}
+

@@ -1209,7 +1209,7 @@ textarea.error~.textarea_resize::before {
 }
 
 header:not(.scroll) .header__inner.black .search-elem-button {
-    background-image: url(/static/img/search-magnifier_black.svg);
+    background-image: url(static/img/search-magnifier_black.svg);
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -1220,7 +1220,7 @@ header:not(.scroll) .header__inner.black .search-elem::after {
 }
 
 header:hover .header__inner.black .search-elem-button {
-    background-image: url(/static/img/search-magnifier.svg);
+    background-image: url(static/img/search-magnifier.svg);
 }
 
 .mobile-search-switcher {
@@ -1258,7 +1258,7 @@ header:hover .header__inner.black .search-elem-button {
 }
 
 .search-box .search-elem-button {
-    background-image: url(/static/img/search-magnifier_black.svg);
+    background-image: url(static/img/search-magnifier_black.svg);
 }
 
 .search-box .search-elem-input {
@@ -1555,7 +1555,7 @@ form.loading {
     }
 
     .search-elem-button {
-        background-image: url(/static/img/search-magnifier_black.svg);
+        background-image: url(static/img/search-magnifier_black.svg);
         width: 18px;
         height: 18px;
     }
@@ -24239,7 +24239,7 @@ tr.v_footer {
 
 /* redesign kindnesses */
 .general-section.background-container {
-    background-image: url(/static/img/800-bg-rose-new.jpg) !important;
+    background-image: url(static/img/800-bg-rose-new.jpg) !important;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -24370,7 +24370,7 @@ tr.v_footer {
 
 
 .section__inner.general-section.kindnesses-inside {
-    background-image: url(/static/img/kindnesses-inside-bg.png);
+    background-image: url(static/img/kindnesses-inside-bg.png);
     background-repeat: no-repeat;
     background-position: 100% 95%;
     -webkit-background-size: 45% 45%;
@@ -25138,7 +25138,7 @@ tr.v_footer {
 /* movement-background */
 
 .general-movement-background {
-    background: url(/static/img/bg-pattern-1.png), url(/static/img/bg-pattern-2.png), #332EBF;
+    background: url(static/img/bg-pattern-1.png), url(static/img/bg-pattern-2.png), #332EBF;
     -webkit-background-size: auto 26.19%;
     -moz-background-size: auto 26.19%;
     -o-background-size: auto 26.19%;
@@ -25256,7 +25256,7 @@ tr.v_footer {
     align-items: flex-start;
     padding-top: 33vh;
     padding-bottom: 17.63vh;
-    background-image: url(/static/img/landscapeing-bg-arrow.svg);
+    background-image: url(static/img/landscapeing-bg-arrow.svg);
     -webkit-background-size: auto 101%;
     -moz-background-size: auto 101%;
     -o-background-size: auto 101%;
@@ -25343,7 +25343,7 @@ tr.v_footer {
 
 /*
 .landscaping-section .swiper-button-next:before {
-    background-image: url(/static/img/transparent-newx.svg);
+    background-image: url(static/img/transparent-newx.svg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: contain;
@@ -25353,7 +25353,7 @@ tr.v_footer {
 }
 
 .landscaping-section .swiper-button-prev:before {
-    background-image: url(/static/img/transparent-back.svg);
+    background-image: url(static/img/transparent-back.svg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: contain;
@@ -27717,19 +27717,19 @@ section.secial-projects-section .container {
 /* новые фоны */
 
 .background-container.red-bg {
-    background-image: url(/static/img/800-bg-red.jpg) !important;
+    background-image: url(static/img/800-bg-red.jpg) !important;
 }
 
 .background-container.blue-bg {
-    background-image: url(/static/img/800-bg-blue.jpg) !important;
+    background-image: url(static/img/800-bg-blue.jpg) !important;
 }
 
 .background-container.green-bg {
-    background-image: url(/static/img/800-bg-green.jpg) !important;
+    background-image: url(static/img/800-bg-green.jpg) !important;
 }
 
 .background-container.sky-bg {
-    background-image: url(/static/img/800-bg-sky.jpg) !important;
+    background-image: url(static/img/800-bg-sky.jpg) !important;
 }
 
 .descr-gray-text {
@@ -28868,7 +28868,7 @@ span.countin-blue {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-image: url('/static/img/articlesNew-main-link-arrow.svg');
+    background-image: url('../img/articlesNew-main-link-arrow.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28892,12 +28892,12 @@ span.countin-blue {
 
 .articlesNew-main__slider .swiper-button-prev {
     left: -41px;
-    background-image: url('/static/img/articlesNew-slider-arrow-prev.svg');
+    background-image: url('../img/articlesNew-slider-arrow-prev.svg');
 }
 
 .articlesNew-main__slider .swiper-button-next {
     right: -41px;
-    background-image: url('/static/img/articlesNew-slider-arrow-next.svg');
+    background-image: url('../img/articlesNew-slider-arrow-next.svg');
 }
 
 .articlesNew-main__items {
@@ -28954,7 +28954,7 @@ span.countin-blue {
 .articlesNew__item[data-category="plays"],
 .articlesNew__item[data-category="podcasts"],
 .articlesNew__item[data-category="articles"] {
-    background-image: url('/static/img/articlesNew/aricles-card-arrow.svg');
+    background-image: url('../img/articlesNew/aricles-card-arrow.svg');
     background-size: cover;
     background-position: end center;
     background-repeat: no-repeat;
@@ -30850,7 +30850,7 @@ width:190px;
 /*  */
 
 .background-container.podcast-bg {
-    background-image: url(/static/img/800-bg-podcast.jpg) !important;
+    background-image: url(static/img/800-bg-podcast.jpg) !important;
 }
 
 .podcast__items {
@@ -35472,11 +35472,11 @@ h4.pp-contentnx__title {
 }
 
 .redaction-card-item-cablecar .articlesNew-main__slider .swiper-button-prev {
-    background-image: url(/static/img/articlesNew-slider-arrow-prev_black.svg);
+    background-image: url(static/img/articlesNew-slider-arrow-prev_black.svg);
 }
 
 .redaction-card-item-cablecar .articlesNew-main__slider .swiper-button-next {
-    background-image: url(/static/img/articlesNew-slider-arrow-next_black.svg);
+    background-image: url(static/img/articlesNew-slider-arrow-next_black.svg);
 }
 
 .title__radio .checkbox-box__item.selected .checkbox__text:after {
@@ -38287,7 +38287,7 @@ ol {
     top: 50%;
     right: 38px;
     transform: translateY(-50%);
-    background-image: url('/static/img/arrow-down-pink.svg');
+    background-image: url('../img/arrow-down-pink.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -38417,7 +38417,7 @@ ol {
 /* ecostart start */
 
 .background-container.ecostart-bg {
-    background-image: url(/static/img/ecostart/1920.svg) !important;
+    background-image: url(static/img/ecostart/1920.svg) !important;
     background-color: #269B38 !important;
 }
 
@@ -38803,25 +38803,25 @@ ol {
 
 @media (max-width:1280px) {
     .background-container.ecostart-bg {
-        background-image: url(/static/img/ecostart/1920.svg) !important;
+        background-image: url(static/img/ecostart/1920.svg) !important;
     }
 }
 
 @media (max-width:1024px) {
     .background-container.ecostart-bg {
-        background-image: url(/static/img/ecostart/1280.svg) !important;
+        background-image: url(static/img/ecostart/1280.svg) !important;
     }
 }
 
 @media (max-width:768px) {
     .background-container.ecostart-bg {
-        background-image: url(/static/img/ecostart/768.svg) !important;
+        background-image: url(static/img/ecostart/768.svg) !important;
     }
 }
 
 @media (max-width:375px) {
     .background-container.ecostart-bg {
-        background-image: url(/static/img/ecostart/375.svg) !important;
+        background-image: url(static/img/ecostart/375.svg) !important;
     }
 }
 
@@ -39094,7 +39094,7 @@ ol {
     }
 
     .ecostart-member {
-        width: 295px !important;
+        /* width: 295px !important; */
         padding: 32px 24px 40px;
         margin: 0;
         grid-column: initial;
