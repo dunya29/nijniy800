@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+	@@include('_blind.html')
+
+    <div class="grid">
+	    <div class="grid__left">
+		    @@include('_voting.html')
+		    @@include('_header.html', {"main": false,"black": false})
+		    <main>
+		    	<div class="main__inner">
+                    <!--gen-sec-->
+                    <section class="section-sm gen-sec" style="background-image: url(static/img/new/volunteers-bg.svg)">
+                        <div class="grid__content">
+                            <h1>Волонтёры 800</h1>
+                            <div class="gen-sec__content">
+                                <p>«Волонтёры 800» — это люди, которые своим радушием и гостеприимством, самоотдачей и слаженной работой приносят пользу обществу и окружающим, а также формируют положительный имидж города и во многом определяют успех любого события.</p>
+                                <a href="#" class="btn main-btn">
+                                    <span>Стать волонтёром</span>
+                                    <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!--about800-content-->
+                    <section class="section about800-content about800-content--vol">
+                        <div class="grid__content ">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>О проекте</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-content about800-content__text">
+                                    <p>В марте 2019 года, Команда правительства, при инициативе и активной поддержке Губернатора Нижегородской области – Глеба Сергеевича Никитина инициировала проект «Команда 800». Он был создан с целью вовлечения жителей города и людей с экспертными навыками в подготовку к празднованию 800-летия Нижнего Новгорода. Проект объединил в себе жителей города, проектные инициативы, экспертное сообщество и правительство Нижнего Новгорода и Нижегородской области. </p>
+                                </div>
+                            </div>
+						</div>
+                    </section>
+                    <!--stat-sec-->
+                    <section class="section stat-sec stat-sec--vol" style="background-image: url(static/img/new/stat-bg-volunteers.svg)">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Итоги Волонтёров 800</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stat-sec__grid">
+                                    @@include('_item-stat.html',{"nmb":"5","txt":"направлений: просвещение, цифровые технологии, медиапроекты и кино, событийная программа и туризм"})
+                                    @@include('_item-stat.html',{"nmb":"1078","txt":"инициатив предложили нижегородцы с 2019 по 2021 год"})
+                                    @@include('_item-stat.html',{"nmb":"726","txt":"инициатив отобрали для размещения на портале"})
+                                    @@include('_item-stat.html',{"nmb":"649","txt":"инициатив были рассмотрены «Экспертами 800»"})
+                                    @@include('_item-stat.html',{"nmb":"116","txt":"инициатив предложили нижегородцпроектов были поддержаны в различной формеы с 2019 по 2021 год"})
+                                    @@include('_item-stat.html',{"nmb":">100","txt":"млн руб. составила общая сумма поддержки проектов"})
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--txt-block-->
+                    <section class="section txt-block txt-block--vol">
+                        <div class="grid__content">
+                            <div class="txt-block__inner">
+                                <div class="title__name"><h3>Проект продолжает жить! Хочешь участвовать? Переходи на сайт </h3></div>                                
+                                <p class="large">Учитывая ключевые сценарии поведения, высокое качество позиционных исследований</p>
+                                <a href="#" class="btn main-btn">
+                                    <span>Перейти на сайт</span>
+                                    <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+		    </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+	@@include('_pps.html')
+	@@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

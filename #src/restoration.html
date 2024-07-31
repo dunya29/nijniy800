@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+    @@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+<body>
+    @@include("_blind.html")
+
+    <div class="grid">
+    	<div class="grid__left">
+            @@include("_voting.html")
+            @@include("_header.html",{"main": false, "black": true})
+		    <main>
+                <div class="main__inner  events__page js-showcase-widget enviroment__page">
+                    <section>
+                        <div class="section__inner general-section general-section_showcase general-section_showcase-sh general-section-inside">
+                            <div class="grid__content">
+                                <a href="#" class="kindnesses-button-back city">
+                                    <div class="kindnesses-button-back__arrow"></div>
+                                    <span class="kindnesses-button-back__text">Город 800</span>
+                                </a>
+                                <div class="general-section__item general-section__item_color-dark">
+                                    <div class="general-section__item_title">
+                                        <h1>Реставрация 800</h1>
+                                    </div>
+                                    <div class="general-section__item_text">
+                                        <p class="large">Сила Нижнего заложена в его истории. Наша задача — донести лучшие её примеры для будущих поколений. Реставрация объектов культурного наследия позволит сохранить особую атмосферу старого Нижнего. В программу вошли порядка 100 объектов культурного наследия на территории исторического центра.                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>           
+                    <section>
+                        <div class="container">
+                            <div class="grid__content">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Карта объектов</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enviroment__map" id='enviroment_map'></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="container" data-aos="fade-up">
+                            <div class="grid__content">                                    
+                                <div class="content-block">
+                                    <div class="content-block__title content-block__title_t">
+                                        <div class="title">
+                                            <div class="title__functional title__functional_only title__functional_tags">
+                                                <div class="tags">
+                                                    <div class="tags-cont">
+                                                        <div class="tags__item tags__item_b active">
+                                                            <span>
+                                                                Всего:<h7>59 объектов</h7>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title__right title__right_search">
+                                                <div class="select showcase_filter_box select_filled">
+                                                    <select name="isRestored" class="showcase_sort">
+                                                        <option value="">Этапы работ</option>
+                                                        <option value="InProgress">В работе</option>                
+                                                        <option value="Done">Готово</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select showcase_filter_box select_filled">
+                                                    <select name="district" class="showcase_sort">
+                                                        <option value="">Все районы города</option>
+                                                        <option value="Nizhegorodskiy">Нижегородский</option>                
+                                                        <option value="Sovetskiy">Советский</option>
+                                                        <option value="Prioksky">Приокский</option>
+                                                        <option value="Leninskiy">Ленинский</option>
+                                                        <option value="Moskovskiy">Московский</option>
+                                                        <option value="Kanavinsky">Канавинский</option>
+                                                        <option value="Sormovskiy">Сормовский</option>
+                                                        <option value="Avtozavodskiy">Автозаводский</option>
+                                                    </select>
+                                                </div>
+                                                <div class="search-button">
+                                                    <div class="search-button-cont">
+                                                        <div class="search-button__ico search-button__ico_toggle">
+                                                            <div class="search-button-ico"></div>
+                                                        </div>
+                                                        <div class="search-button__panel">
+                                                            <div class="search-button-panel">
+                                                                <input type="text" name="query" placeholder="Поиск по объектам" id="search-input" class="showcase_search active">
+                                                            </div>
+                                                            <div class="search-button__cross">
+                                                                <button type="reset" class="search-button-cross js-action-search-clear"></button>
+                                                            </div>
+                                                            <div class="search-button__ico search-button__ico_find js-action-search">
+                                                                <div class="search-button-ico"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mobile-select"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-block__cont events-list objects-list">
+                                        <div class="js-projects-container events-list-cont" id="load_container">
+                                            <div class="events-list__item events-list__item_affiche objects-list__item">
+                                                <div class="card card_event">
+                                                    <div class="card__img card__img_small">
+                                                        <a href="#" class="card-img">
+                                                            <div class="card-img__pic">
+                                                                <img loading="lazy" src="assets/restoration/Dom_voennogo_gubernatora_NGHM/hudozhmuzeum_big.jpg" alt="Дом военного губернатора">
+                                                            </div>
+                                                            <span class="card__img-label restored"></span>            
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-main">
+                                                        <div class="card__title">
+                                                            <a href="#">
+                                                                <div class="obj_district">Нижегородский район</div>                    
+                                                                <h7>Дом военного губернатора</h7>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__adress">
+                                                        <a href="#"><div class="item-descr__info">
+                                                            <div class="item-descr__info_link">
+                                                                <div class="addnew_img green">
+                                                                    <img src="static/img/env-arrow.svg" alt="env-arrow">
+                                                                </div>
+                                                                <p><b>подробнее</b></p>
+                                                           </div>
+                                                        </div></a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="events-list__item events-list__item_affiche objects-list__item">
+                                                <div class="card card_event">
+                                                    <div class="card__img card__img_small">
+                                                        <a href="#" class="card-img">
+                                                            <div class="card-img__pic">
+                                                                <img loading="lazy" src="assets/restoration/Dom_voennogo_gubernatora_NGHM/hudozhmuzeum_big.jpg" alt="Дом военного губернатора">
+                                                            </div>
+                                                            <span class="card__img-label restored"></span>            
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-main">
+                                                        <div class="card__title">
+                                                            <a href="#">
+                                                                <div class="obj_district">Нижегородский район</div>                    
+                                                                <h7>Дом военного губернатора</h7>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__adress">
+                                                        <a href="#"><div class="item-descr__info">
+                                                            <div class="item-descr__info_link">
+                                                                <div class="addnew_img green">
+                                                                    <img src="static/img/env-arrow.svg" alt="env-arrow">
+                                                                </div>
+                                                                <p><b>подробнее</b></p>
+                                                           </div>
+                                                        </div></a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="events-list__item events-list__item_affiche objects-list__item">
+                                                <div class="card card_event">
+                                                    <div class="card__img card__img_small">
+                                                        <a href="#" class="card-img">
+                                                            <div class="card-img__pic">
+                                                                <img loading="lazy" src="assets/restoration/Dom_voennogo_gubernatora_NGHM/hudozhmuzeum_big.jpg" alt="Дом военного губернатора">
+                                                            </div>
+                                                            <span class="card__img-label restored"></span>            
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-main">
+                                                        <div class="card__title">
+                                                            <a href="#">
+                                                                <div class="obj_district">Нижегородский район</div>                    
+                                                                <h7>Дом военного губернатора</h7>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__adress">
+                                                        <a href="#"><div class="item-descr__info">
+                                                            <div class="item-descr__info_link">
+                                                                <div class="addnew_img green">
+                                                                    <img src="static/img/env-arrow.svg" alt="env-arrow">
+                                                                </div>
+                                                                <p><b>подробнее</b></p>
+                                                           </div>
+                                                        </div></a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="events-list__item events-list__item_affiche objects-list__item">
+                                                <div class="card card_event">
+                                                    <div class="card__img card__img_small">
+                                                        <a href="#" class="card-img">
+                                                            <div class="card-img__pic">
+                                                                <img loading="lazy" src="assets/restoration/Dom_voennogo_gubernatora_NGHM/hudozhmuzeum_big.jpg" alt="Дом военного губернатора">
+                                                            </div>
+                                                            <span class="card__img-label restored"></span>            
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-main">
+                                                        <div class="card__title">
+                                                            <a href="#">
+                                                                <div class="obj_district">Нижегородский район</div>                    
+                                                                <h7>Дом военного губернатора</h7>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__adress">
+                                                        <a href="#"><div class="item-descr__info">
+                                                            <div class="item-descr__info_link">
+                                                                <div class="addnew_img green">
+                                                                    <img src="static/img/env-arrow.svg" alt="env-arrow">
+                                                                </div>
+                                                                <p><b>подробнее</b></p>
+                                                           </div>
+                                                        </div></a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="events-list__item events-list__item_affiche objects-list__item">
+                                                <div class="card card_event">
+                                                    <div class="card__img card__img_small">
+                                                        <a href="#" class="card-img">
+                                                            <div class="card-img__pic">
+                                                                <img loading="lazy" src="assets/restoration/Dom_voennogo_gubernatora_NGHM/hudozhmuzeum_big.jpg" alt="Дом военного губернатора">
+                                                            </div>
+                                                            <span class="card__img-label restored"></span>            
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-main">
+                                                        <div class="card__title">
+                                                            <a href="#">
+                                                                <div class="obj_district">Нижегородский район</div>                    
+                                                                <h7>Дом военного губернатора</h7>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__adress">
+                                                        <a href="#"><div class="item-descr__info">
+                                                            <div class="item-descr__info_link">
+                                                                <div class="addnew_img green">
+                                                                    <img src="static/img/env-arrow.svg" alt="env-arrow">
+                                                                </div>
+                                                                <p><b>подробнее</b></p>
+                                                           </div>
+                                                        </div></a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="empty-box js-no-objects-message" style="display:none;">
+                                        <div class="create-part create__project">
+                                            <div class="create-part__pic">
+                                                <img src="static/img/enviroment-ico-1.svg" alt="empty">
+                                            </div>
+                                            <h7 class="create-part__title">
+                                                Подходящих объектов не найдено
+                                            </h7>
+                                            <p class="create-part__subtitle">
+                                                Попробуйте выбрать другой фильтр
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-block__more js-action-show-more-container" data-aos="fade-up">
+                                        <a href="#" class="content-block-more js-action-show-more">
+                                            <span class="showcase_left_count">Показать еще 50 объектов</span>
+                                        </a>
+                                    </div>
+                                    <div class="sep_60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>           
+            </main>
+	        <!--footer-->
+            @@include('_footer.html')
+            @@include('_footer.html')
+            @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+    @@include('_pps.html')
+    @@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+    <script>                   
+        var category_all = { 
+            "id": "all",
+            "color": "#f37320",
+            "objects": {
+                0:{
+                    "pagetitle" : "Жилой дом",
+                    "img" : "assets/restoration/BolshayaPecherskaya35/pecherskaya35big.jpg",
+                    "link" : "city/restoration-800/building-bolshaya-pecherskaya",
+                    "coords": "56.324192415906836,44.025752601852325",
+                    "isRestored": "",
+                },
+                1:{
+                    "pagetitle" : "Дом Верениновых",
+                    "img" : "assets/restoration/DomVereninovyh/verenonovbig.jpg",
+                    "link" : "city/restoration-800/house-vereninov",
+                    "coords": "56.31691226517457,43.987266570175684",
+                    "isRestored": "",
+                },
+                2:{
+                    "pagetitle" : "Корпус мануфактурных складов Нижегородской ярмарки",
+                    "img" : "assets/restoration/SkladyYarmarki/skladyarmarkabig.jpg",
+                    "link" : "city/restoration-800/the-case-of-the-manufacturing-warehouses-of-nizhny-novgorod-fair",
+                    "coords": "56.33142836969558,43.95919392327882",
+                    "isRestored": "",
+                },
+                3:{
+                    "pagetitle" : "Городское училище Ломоносова",
+                    "img" : "assets/restoration/LomonisovUchilishe/lomonosovabig.jpg",
+                    "link" : "city/restoration-800/city-college-m-v-lomonosova",
+                    "coords": "56.32498333954766,43.98577622883607",
+                    "isRestored": "",
+                },
+                4:{
+                    "pagetitle" : "Народная консерватория",
+                    "img" : "assets/restoration/NarodnaKonservatori/konsernatoribig.jpg",
+                    "link" : "city/restoration-800/the-peoples-conservatory",
+                    "coords": "56.322368798373965,44.004117999999956",
+                    "isRestored": "",
+                },
+                5:{
+                    "pagetitle" : "Всесословный клуб",
+                    "img" : "assets/restoration/VsesoslovnyClub/vsesoslovnydombig.jpg",
+                    "link" : "city/restoration-800/all-classes-club",
+                    "coords": "56.324648616754665,44.00516631779098",
+                    "isRestored": "",
+                },
+                6:{
+                    "pagetitle" : "Дом Вялова",
+                    "img" : "assets/restoration/DomVjalova/vjalovbig.jpg",
+                    "link" : "city/restoration-800/building-vyalov",
+                    "coords": "56.32670471467156,43.98082277116383",
+                    "isRestored": "",
+                },
+                7:{
+                    "pagetitle" : "Дом Пальцева",
+                    "img" : "assets/restoration/DomPalceva/palzevabig.jpg",
+                    "link" : "city/restoration-800/paltzevs-house",
+                    "coords": "56.321674320067345,43.99952612698362",
+                    "isRestored": "",
+                },
+                8:{
+                    "pagetitle" : "Дом военного губернатора",
+                    "img" : "assets/restoration/Dom_voennogo_gubernatora_NGHM/hudozhmuzeum_big.jpg",
+                    "link" : "city/restoration-800/dom-voennogo-gubernatora",
+                    "coords": "56.329547,44.006391",
+                    "isRestored": "1",
+                },
+                9:{
+                    "pagetitle" : "Флигель усадьбы Киризеева",
+                    "img" : "assets/restoration/FligelUsadbyKirizeeva/kirizeevbig.jpg",
+                    "link" : "city/restoration-800/the-wing-of-the-manor-kirizeeva",
+                    "coords": "56.326318068409826,44.010016398147506",
+                    "isRestored": "1",
+                },
+                10:{
+                    "pagetitle" : "Дом Чегодаева",
+                    "img" : "assets/restoration/DomChegodaeva/chegodaevbig.jpg",
+                    "link" : "city/restoration-800/building-chegodaeva",
+                    "coords": "56.32387915823386,44.01944663558188",
+                    "isRestored": "1",
+                },
+                11:{
+                    "pagetitle" : "Дом Зайцева",
+                    "img" : "assets/Gorod_DoPosle/zaicevPosle.jpg",
+                    "link" : "city/restoration-800/dom-zaitsev",
+                    "coords": "56.32537315144398,44.02050600429914",
+                    "isRestored": "1",
+                },
+                12:{
+                    "pagetitle" : "Здание Александровской женской богадельни с родовспомогательным отделением",
+                    "img" : "assets/Gorod_DoPosle/Banners/bogadelnyaPosle.jpg",
+                    "link" : "city/restoration-800/the-building-of-the-alexander-womens-almshouse-with-the-obstetric-department",
+                    "coords": "56.31989877201638,44.01427648280331",
+                    "isRestored": "1",
+                },
+                13:{
+                    "pagetitle" : "Дом Щелокова",
+                    "img" : "assets/restoration/DomShelokova/shelokovabig.jpg",
+                    "link" : "city/restoration-800/house-m-f-shchelokov",
+                    "coords": "56.32474959515831,44.00864413061906",
+                    "isRestored": "1",
+                },
+                14:{
+                    "pagetitle" : "Гимназический манеж Александровского дворянского института",
+                    "img" : "assets/Gorod_DoPosle/gimPosle.jpg",
+                    "link" : "city/restoration-800/gymnasium-manege-alexander-noble-institution",
+                    "coords": "56.32493237822182,44.00690994907378",
+                    "isRestored": "1",
+                },
+                15:{
+                    "pagetitle" : "Дом Эвениуса",
+                    "img" : "assets/Gorod_DoPosle/Banners/eveniusPosle.jpg",
+                    "link" : "city/restoration-800/house-evenius",
+                    "coords": "56.32443626164373,44.00843327976225",
+                    "isRestored": "1",
+                },
+                16:{
+                    "pagetitle" : "Дом, где жил и работал фотограф-художник Карелин",
+                    "img" : "assets/Gorod_DoPosle/karelinPosle.jpg",
+                    "link" : "city/restoration-800/house-where-lived-and-worked-as-a-photographer–artist-karelin",
+                    "coords": "56.3245551070698,44.00892308035662",
+                    "isRestored": "1",
+                },
+                17:{
+                    "pagetitle" : "Дом, где бывали Лопатин, Ульянов, Балакирев",
+                    "img" : "assets/Gorod_DoPosle/gdebivaliPosle.jpg",
+                    "link" : "city/restoration-800/the-house-in-which-have-been-revolutionary-lopatin-,-educator-ulyanov,-the-composer-balakirev",
+                    "coords": "56.32506478532995,44.007409491401674",
+                    "isRestored": "1",
+                },
+                18:{
+                    "pagetitle" : "Авиационный техникум",
+                    "img" : "assets/restoration/AviacionnyTechnikum/aviacionnyTechnikumbig.jpg",
+                    "link" : "city/restoration-800/aviation-college",
+                    "coords": "56.31267202059862,43.99106264387967",
+                    "isRestored": "1",
+                },
+                19:{
+                    "pagetitle" : "Дом, в котором жил «в людях» Горький",
+                    "img" : "assets/Gorod_DoPosle/Banners/gorkyzhil.jpg",
+                    "link" : "city/restoration-800/the-house-which-lived-a-m-gorky",
+                    "coords": "56.315975157963244,43.9961866312828",
+                    "isRestored": "1",
+                },
+                20:{
+                    "pagetitle" : "Дом с воссозданной мемориальной обстановкой жизни нижегородской интеллигенции конца XIX — начала XX веков",
+                    "img" : "assets/restoration/DomIntelligencii/intelligenciabig.jpg",
+                    "link" : "city/restoration-800/house-recreated-a-memorial-situation-and-life-of-nizhny-novgorod-intelligentsia-of-the-late-xix-—-early-xx-centuries",
+                    "coords": "56.31567604480626,44.00313196786941",
+                    "isRestored": "1",
+                },
+                21:{
+                    "pagetitle" : "Дом Грибкова и Больница Красного Креста",
+                    "img" : "assets/Gorod_DoPosle/gribkovPosle.jpg",
+                    "link" : "city/restoration-800/house-and-m-gribkova-and-red-cross-hospital",
+                    "coords": "56.32401456695212,44.03324817724608",
+                    "isRestored": "1",
+                },
+                22:{
+                    "pagetitle" : "Дом Сироткина с росписью плафонов",
+                    "img" : "assets/Gorod_DoPosle/SirotkinPosle.jpg",
+                    "link" : "city/restoration-800/the-sirotkin-house-painted-ceiling",
+                    "coords": "56.329377,44.012751",
+                    "isRestored": "1",
+                },
+                23:{
+                    "pagetitle" : "Усадьба Рукавишникова",
+                    "img" : "assets/Gorod_DoPosle/Banners/rukavishnikovih.jpg",
+                    "link" : "city/restoration-800/finca-with-m-rukavishnikova",
+                    "coords": "56.32918285639803,44.01596029629515",
+                    "isRestored": "1",
+                },
+                24:{
+                    "pagetitle" : "Дом, где жил поэт Тарас Шевченко",
+                    "img" : "assets/Gorod_DoPosle/Banners/DSC08225-min.jpg",
+                    "link" : "city/restoration-800/the-house-taras-shevchenko",
+                    "coords": "56.32961425973921,44.009940309192665",
+                    "isRestored": "1",
+                },
+                25:{
+                    "pagetitle" : "Здание Первого детского приюта",
+                    "img" : "assets/Gorod_DoPosle/priyutPosle.jpg",
+                    "link" : "city/restoration-800/the-building-of-the-first-orphanage",
+                    "coords": "56.318341,43.98882",
+                    "isRestored": "1",
+                },
+                26:{
+                    "pagetitle" : "Жилой дом",
+                    "img" : "assets/Gorod_DoPosle/dom3352Posle.jpg",
+                    "link" : "city/restoration-800/ilinskaya-69-house",
+                    "coords": "56.31790945555629,43.98789831349175",
+                    "isRestored": "1",
+                },
+                27:{
+                    "pagetitle" : "Жилой дом",
+                    "img" : "assets/Gorod_DoPosle/dom3351Posle.jpg",
+                    "link" : "city/restoration-800/ilinskaya-51-house",
+                    "coords": "",
+                    "isRestored": "1",
+                },
+                28:{
+                    "pagetitle" : "Усадьба Вагина. Флигель",
+                    "img" : "assets/restoration/UsadbaVagina/UsadbaVaginabig.jpg",
+                    "link" : "city/restoration-800/manor-a-vagina-wing",
+                    "coords": "56.323173,43.991461",
+                    "isRestored": "1",
+                },
+                29:{
+                    "pagetitle" : "Жилые дома",
+                    "img" : "assets/Gorod_DoPosle/dom3349Posle.jpg",
+                    "link" : "city/restoration-800/houses-ilinskaya18-20",
+                    "coords": "56.326222581049215,43.992701812828",
+                    "isRestored": "1",
+                },
+                30:{
+                    "pagetitle" : "Дом Обрядчикова, в котором размещалась гостиница «Россия»",
+                    "img" : "assets/Gorod_DoPosle/obryadchkovPosle.jpg",
+                    "link" : "city/restoration-800/dom-obryadchikov-which-housed-the-hotel-russia",
+                    "coords": "56.32691723986497,44.008315534393226",
+                    "isRestored": "1",
+                },
+                31:{
+                    "pagetitle" : "Корпус верхнепосадских торговых рядов",
+                    "img" : "assets/Gorod_DoPosle/torgoviePosle.jpg",
+                    "link" : "city/restoration-800/case-verhnetoemsky-trading-rows",
+                    "coords": "56.3256479037668,44.00562145767207",
+                    "isRestored": "1",
+                },
+                32:{
+                    "pagetitle" : "Ярмарочная фильтровальная станция",
+                    "img" : "assets/Gorod_DoPosle/Banners/banfiltr.png",
+                    "link" : "city/restoration-800/fair-water-station",
+                    "coords": "56.3345638299385,43.97429399999997",
+                    "isRestored": "1",
+                },
+                33:{
+                    "pagetitle" : "Здание, где проходило формирование Волжской военной флотилии",
+                    "img" : "assets/restoration/VolzhskayaFlotilia/flotiliabig.jpg",
+                    "link" : "city/restoration-800/the-building,-which-the-formation-of-the-volga-flotilla",
+                    "coords": "56.323437299351944,43.9528247116394",
+                    "isRestored": "1",
+                },
+                34:{
+                    "pagetitle" : "Корпус макаронной фабрики",
+                    "img" : "assets/Gorod_DoPosle/Banners/makaronfabrika-min.jpg",
+                    "link" : "city/restoration-800/case-macaroni-factory",
+                    "coords": "56.31707642835211,43.97250829923771",
+                    "isRestored": "1",
+                },
+                35:{
+                    "pagetitle" : "Жилой дом",
+                    "img" : "assets/restoration/BolshieOvragi/bolshieovragibig.jpg",
+                    "link" : "city/restoration-800/residential-house-bolshie-ovragi",
+                    "coords": "56.315172715150155,43.98215626256557",
+                    "isRestored": "1",
+                },
+                36:{
+                    "pagetitle" : "Красный флигель кадетского корпуса",
+                    "img" : "assets/Gorod_DoPosle/Banners/bannerkadetsfligel.jpg",
+                    "link" : "city/restoration-800/red-wing-cadet-corps",
+                    "coords": "56.32650110737996,44.00020531349181",
+                    "isRestored": "1",
+                },
+                37:{
+                    "pagetitle" : "Казарма гарнизонного батальона",
+                    "img" : "assets/restoration/KazarmabatalonaKreml/kazarmabig.jpg",
+                    "link" : "city/restoration-800/barracks-garrison-battalion",
+                    "coords": "56.32785393340863,44.004211135581976",
+                    "isRestored": "1",
+                },
+                38:{
+                    "pagetitle" : "Флигель дома военного губернатора",
+                    "img" : "assets/restoration/Fligelvoenguber/fligelbig.jpg",
+                    "link" : "city/restoration-800/wing-of-the-house-of-the-military-governor",
+                    "coords": "56.3293175979759,44.00764045337289",
+                    "isRestored": "1",
+                },
+                39:{
+                    "pagetitle" : "Дом, где родился летчик Нестеров",
+                    "img" : "assets/restoration/DomNesterova/nesterovbig.jpg",
+                    "link" : "city/restoration-800/the-house-in-which-in-1887-was-born-the-pilot-nesterov",
+                    "coords": "56.327694785443214,44.00129181349169",
+                    "isRestored": "1",
+                },
+                40:{
+                    "pagetitle" : "Манеж с домовой Никольской церковью",
+                    "img" : "assets/Gorod_DoPosle/ManezhPosle.jpg",
+                    "link" : "city/restoration-800/the-house-arena-with-the-st.-nicholas-church",
+                    "coords": "56.32767295095874,43.999292626983596",
+                    "isRestored": "1",
+                },
+                41:{
+                    "pagetitle" : "Театр оперы и балета имени Пушкина",
+                    "img" : "assets/restoration/TeatrOperyBaleta/opernibig.jpg",
+                    "link" : "city/restoration-800/theatre-of-opera-and-ballet-named-after-pushkin",
+                    "coords": "56.315724292136125,44.016960220237635",
+                    "isRestored": "1",
+                },
+                42:{
+                    "pagetitle" : "Объекты Нижегородской губернской земской больницы",
+                    "img" : "assets/Gorod_DoPosle/bolnichnPosle.jpg",
+                    "link" : "city/restoration-800/the-objects-of-the-nizhny-novgorod-provincial-zemstvo-hospital",
+                    "coords": "56.32697700005631,44.021557007934554",
+                    "isRestored": "1",
+                },
+                43:{
+                    "pagetitle" : "Дом Мичурина",
+                    "img" : "assets/restoration/DomMichurina/michurinbig.jpg",
+                    "link" : "city/restoration-800/house-michurina",
+                    "coords": "56.32644159445335,43.98082437401037",
+                    "isRestored": "1",
+                },
+                44:{
+                    "pagetitle" : "Дом Соболева",
+                    "img" : "assets/restoration/DomSoboleva/domsobolevabig.jpg",
+                    "link" : "city/restoration-800/house-and-n-sobolev",
+                    "coords": "56.32658562017437,43.98202063128269",
+                    "isRestored": "1",
+                },
+                45:{
+                    "pagetitle" : "Доходный дом и дом Заплатина",
+                    "img" : "assets/restoration/DohodnyDom/dohodnyidombig.jpg",
+                    "link" : "city/restoration-800/apartment-house-and-the-house-and-zaplatina",
+                    "coords": "56.32971927906858,43.99334511705773",
+                    "isRestored": "1",
+                },
+                46:{
+                    "pagetitle" : "Дом, где жил революционер Дунаев",
+                    "img" : "assets/restoration/DomDunaeva/domdunaevabig.jpg",
+                    "link" : "city/restoration-800/the-house-where-he-lived-revolutionary-dunaev",
+                    "coords": "56.32885859792077,43.99080481341718",
+                    "isRestored": "1",
+                },
+                47:{
+                    "pagetitle" : "Здание «Блиновского пассажа»",
+                    "img" : "assets/restoration/BlinovskiPassazh/blinovskipassazhbig.jpg",
+                    "link" : "city/restoration-800/building-blinovskoe-passage",
+                    "coords": "56.328244,43.988406",
+                    "isRestored": "1",
+                },
+                48:{
+                    "pagetitle" : "Жилой дом",
+                    "img" : "assets/restoration/Kozhevennaya/millioshkabig.jpg",
+                    "link" : "city/restoration-800/residential-house",
+                    "coords": "56.330527518920725,44.000079313491824",
+                    "isRestored": "1",
+                },
+                49:{
+                    "pagetitle" : "Общежитие института инженеров водного транспорта с кинотеатром «Рекорд»",
+                    "img" : "assets/restoration/Record/recordbig.jpg",
+                    "link" : "city/restoration-800/the-hostel-of-the-institute-of-water-transport-engineers-with-a-cinema-record",
+                    "coords": "56.324027474654386,44.0047749332046",
+                    "isRestored": "1",
+                },
+                50:{
+                    "pagetitle" : "Здание ремесленной управы",
+                    "img" : "assets/restoration/ZdanieRemeslenoiUpravy/remesupravabig.jpg",
+                    "link" : "city/restoration-800/the-craft-council",
+                    "coords": "56.3221649726789,44.006465538028635",
+                    "isRestored": "1",
+                },
+                51:{
+                    "pagetitle" : "Дом Иконникова",
+                    "img" : "assets/Gorod_DoPosle/Banners/Ikonnikovamin.jpg",
+                    "link" : "city/restoration-800/house-ikonnikova",
+                    "coords": "56.316878,43.988685",
+                    "isRestored": "1",
+                },
+                52:{
+                    "pagetitle" : "Дом Худякова",
+                    "img" : "assets/restoration/DomHudykova/hudyakovbig.jpg",
+                    "link" : "city/restoration-800/house-khudyakov",
+                    "coords": "56.31615966178591,43.9905808895492",
+                    "isRestored": "1",
+                },
+                53:{
+                    "pagetitle" : "Торговый флигель Каменевой",
+                    "img" : "assets/Gorod_DoPosle/Banners/torgfligel-min.jpg",
+                    "link" : "city/restoration-800/the-trading-wing-of-kameneva",
+                    "coords": "56.31765613628254,43.9956525760574",
+                    "isRestored": "1",
+                },
+                54:{
+                    "pagetitle" : "Дом декабристов Белавиных",
+                    "img" : "assets/Gorod_DoPosle/BelaviniPosle.jpg",
+                    "link" : "city/restoration-800/the-house-of-the-decembrists-belayneh",
+                    "coords": "56.317569681127885,43.995765228836035",
+                    "isRestored": "1",
+                },
+                55:{
+                    "pagetitle" : "Мемориальный музей Свердлова",
+                    "img" : "assets/restoration/SverdlovaMuseum/sverdlovabig.jpg",
+                    "link" : "city/restoration-800/memorial-museum-sverdlova",
+                    "coords": "56.32452606840522,44.00315858465575",
+                    "isRestored": "1",
+                },
+                56:{
+                    "pagetitle" : "Здание редакции газеты «Нижегородская коммуна»",
+                    "img" : "assets/Gorod_DoPosle/komunnaPosle.jpg",
+                    "link" : "city/restoration-800/the-building-of-the-newspaper-nizhegorodskaya-kommuna",
+                    "coords": "56.321307221023595,43.99912162698355",
+                    "isRestored": "1",
+                },
+                57:{
+                    "pagetitle" : "Дом Казанского",
+                    "img" : "assets/restoration/DomKazanskogo/DomKazanskogobig.jpg",
+                    "link" : "city/restoration-800/dom-kazanskogo",
+                    "coords": "56.324266,44.000552",
+                    "isRestored": "1",
+                },
+                58:{
+                    "pagetitle" : "Дом Костромина",
+                    "img" : "assets/Gorod_DoPosle/Kostrominaposle-min.jpg",
+                    "link" : "city/restoration-800/house-kostromina",
+                    "coords": "56.32496,44.00375",
+                    "isRestored": "1",
+                },	                   
+            }           
+        }
+    </script> 
+    <script src="static/js/enviroment_map.js" type="text/javascript" defer=""></script>
+</body>
+
+</html>

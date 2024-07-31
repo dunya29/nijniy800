@@ -1,0 +1,258 @@
+<!--Layout pps-->
+<div id="office-auth-form">
+	<div class="pp pp_small" data-mod="recovery">
+		<div class="pp__bg"></div>
+		<div class="pp__content pp__content_small">
+			<div class="pp-content pp-content_small">
+				<div class="pp-cross"></div>
+				<div class="pp-enter">
+					<div class="pp-enter__title">
+						<h5>Восстановление пароля</h5>
+					</div>
+					<div class="pp-enter__text">
+						<span>
+							Введите e-mail, указанный при регистрации, чтобы мы смогли выслать инструкции по
+							восстановлению</span>
+					</div>
+					<div class="pp-enter__fields">
+						<form id="office-auth-recover">
+                            <fieldset>
+                                <div class="pp__inputs">
+                                    <div class="pp-inputs">
+                                        <div class="pp-inputs__item">
+											<label class="error"></label>
+                                            <img src="static/img/images/pp-input-ico-1.svg" alt="input">
+                                            <input autocomplete="off" required="" tabindex="1" type="email" name="email" id="office-auth-recover-username" placeholder="Введите ваш e-mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="color_green pp_ go_to_thanx" data-pp="thanx" style="visibility: hidden"></a>
+                                <div class="pp__button">
+                                    <button type="submit" class="btn">
+                                        <span>
+                                            отправить
+                                        </span>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>					
+                    </div>
+					<div class="pp-enter__toreg">
+						<span>Уже зарегитрированы?<a class="color_green pp_ pp-ajax" data-pp="signin">
+								Вход</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pp pp_double" data-mod="signin">
+		<div class="pp__bg"></div>
+		<div class="pp__content pp__content_enter">
+			<div class="pp-content">
+				<div class="pp-cross"></div>
+				<div class="pp-content__left">
+					<div class="pp__enter">
+						<div class="pp-enter">
+							<div class="pp-enter__title">
+								<h5>
+									Быстрый вход
+								</h5>
+							</div>
+							<div class="pp-enter__socs">
+                                <div class="socs">
+                                    <div class="socs-cont">
+                                        <a href="https://nizhny800.ru/about?hauth_action=login&provider=Vkontakte" class="socs__item socs__item_vk" rel="nofollow" title="Vkontakte"><span></span></a>
+                                        <a href="https://nizhny800.ru/about?hauth_action=login&provider=Odnoklassniki" class="socs__item socs__item_ok" rel="nofollow" title="Odnoklassniki"><span></span></a>                                                     
+                                    </div>
+                                    <div class="socs-or">
+                                        <span>
+                                            или
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>                                   
+                            <div class="pp-enter__fields">
+                                <form method="post" id="office-auth-login">
+                                    <fieldset>
+                                        <div class="pp__inputs">
+                                            <div class="pp-inputs">
+                                                <div class="pp-inputs__item">
+													<label class="error">Введите корректный email</label>
+                                                    <img src="static/img/images/pp-input-ico-1.svg" alt="username">
+                                                    <input class="error" autocomplete="off" tabindex="1" type="email" name="username" class="" id="office-auth-login-username" placeholder="Введите ваш e-mail">
+                                                </div>
+                                                <div class="pp-inputs__item">
+													<label class="error"></label>
+                                                    <img src="static/img/images/pp-input-ico-2.svg" alt="password">
+                                                    <a class="pp_ pp-input-pp pp-ajax" data-pp="recovery">
+                                                        Восстановить пароль
+                                                    </a>
+                                                    <input autocomplete="off" tabindex="2" type="password" name="password" class="" id="office-auth-login-password" placeholder="Пароль">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pp__button">
+                                            <button type="submit" class="btn">
+                                                <span>
+                                                    войти
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+							<div class="pp-enter__toreg">
+								<span>
+									Впервые на сайте?
+									<a class="color_green pp_ pp-ajax" data-pp="registration">
+										Зарегистрируйтесь
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pp pp_double" data-mod="registration">
+		<div class="pp__bg"></div>
+		<div class="pp__content pp__content_enter">
+			<div class="pp-content">
+				<div class="pp-cross"></div>
+				<div class="pp-content__left">
+					<div class="pp__enter">
+						<div class="pp-enter">
+							<div class="pp-enter__title">
+								<h5>
+									Регистрация
+									<br>
+									нового пользователя
+								</h5>
+							</div>
+							<div class="pp-enter__fields">
+								<form method="post" id="office-auth-register" class="js-register">
+                                    <fieldset>
+                                        <div class="pp__inputs">
+                                            <div class="pp-inputs">
+                                                <div class="pp-inputs__item">
+													<label class="error"></label>
+                                                    <img src="static/img/images/pp-input-ico-1.svg" alt="email">
+                                                    <input autocomplete="off" required="" tabindex="1" type="text" name="email" placeholder="Введите ваш e-mail">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pp__check">
+                                            <div class="pp-check">
+                                                <div class="pp-check__checkbox">
+                                                    <div class="check">
+														<label class="error"></label>
+                                                        <input autocomplete="off" class="styled-checkbox" id="checkrules" value="" name="terms_ok" type="checkbox">
+                                                        <label for="checkrules"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="pp-check__text">
+                                                    <span>
+                                                        Нажимая кнопку зарегистрироваться, я подтверждаю, что ознакомился и принимаю
+                                                        <a class="" href="static/files/policy.pdf" target="_blank">
+                                                          политику обработки персональных данных
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="color_green pp_ go_to_thanx" data-pp="registration_thanx" style="visibility: hidden"></a>
+                                        <div class="pp__button">
+                                            <button class="btn emailRegistrate" type="submit">
+                                                <span>
+                                                  зарегистрироваться
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </form>								
+                            </div>
+							<div class="pp-enter__toreg">
+								<span>
+									Уже зарегистрированы?
+									<a class="color_green pp_ pp-ajax" data-pp="signin">
+										Вход
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pp pp_small pp_thanx" data-mod="registration_thanx">
+		<div class="pp__bg"></div>
+		<div class="pp__content pp__content_small">
+			<div class="pp-content pp-content_small">
+				<div class="pp-cross"></div>
+				<div class="pp-enter">
+					<div class="pp-enter__thanx-ico">
+						<img src="static/img/images/thanx-ico.svg" alt="thanx">
+					</div>
+					<div class="pp-enter__text">
+						<span>
+							Пароль сгенерирован и успешно отправлен на указанную вами электронную почту
+						</span>
+					</div>
+					<div class="pp__button">
+						<button type="button" class="btn btn_close">
+							<span>
+								закрыть
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pp pp_simple pp_simple_rules pp_simple_test" data-mod="pp_poll">
+	<div class="pp__bg"></div>
+	<div class="pp__content pp__content_simple">
+		<div class="pp-content pp-content_simple">
+			<div class="pp-cross"></div>
+			<div class="content-block__title">
+				<div class="title">
+					<div class="title__name">
+						<h2></h2>
+					</div>
+				</div>
+			</div>	    
+			<div class="pp-content__text">
+            </div>                                
+		</div>
+	</div>
+</div>
+
+<div class="pp pp_success" data-mod="pp_success">
+	<div class="pp__bg"></div>
+	<div class="pp__content pp__content_success">
+		<div class="pp-cross"></div>
+		<div class="success-container">
+			<div class="success-container__title"></div>
+			<div class="success-container__descr"></div>
+			<button class="btn success-container__button pink close_btn">
+				<span>Закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+<div class="pp pp_success pp_error" data-mod="pp_error">
+	<div class="pp__bg"></div>
+	<div class="pp__content pp__content_success">
+		<div class="pp-cross"></div>
+		<div class="success-container">
+			<div class="success-container__title">Что-то пошло не так</div>
+			<div class="success-container__descr"></div>
+			<button class="btn success-container__button pink close_btn">
+				<span>Закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>

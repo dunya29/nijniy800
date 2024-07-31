@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+	@@include('_blind.html')
+
+    <div class="grid">
+	    <div class="grid__left">
+		    @@include('_voting.html')
+		    @@include('_header.html', {"main": false,"black": true})
+		    <main>			
+                <div class="timeline_wrapper timeline_wrapper_fixed grid__content">
+                        <div class="timeline">
+                        <div class="timeline_nav timeline_prev"></div>
+                        <div class="timeline_inner">
+                            <div class="timeline_inner_i">
+                                <div class="timeline_item" data-year="1221">1221</div>
+                                <div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1238">1238</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1341">1341</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1392">1392</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1411">1411</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1500">1500</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1611">1611</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1620">1620</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1719">1719</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1779">1779</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1800">1800</div><div class="timeline_item_sep">...</div>
+                                <div class="timeline_item" data-year="1822">1822</div><div class="timeline_item_sep">...</div>
+                            </div>            
+                     </div>            
+                     <div class="timeline_nav timeline_next"></div>
+                 </div>
+                </div>             
+                <div class="main__inner">
+                    <section>
+                        <div class="section__inner general-section general-section_showcase general-section_i">
+                            <div class="grid__content">
+                                <div class="general-section__item general-section__item_color-dark">
+                                    <div class="general-section__item_title">
+                                        <h1>История города</h1>
+                                    </div>
+                                    <div class="general-section__item_text">
+                                        <p class="large">Нижний Новгород — центр Нижегородской области и столица Приволжского федерального округа, шестой по численности мегаполис России. Город расположен на месте встречи рек Волги и Оки в центральной части Восточно-Европейской равнины, в 400 километрах на восток от Москвы.                     </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="container">
+                            <div class="grid__content">                
+                                <div class="timeline_wrapper timeline_wrapper_page">
+                                    <div class="timeline">
+                                        <div class="timeline_nav timeline_prev"></div>
+                                        <div class="timeline_inner">
+                                            <div class="timeline_inner_i">
+                                                <div class="timeline_item" data-year="1221">1221</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1238">1238</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1341">1341</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1392">1392</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1411">1411</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1500">1500</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1611">1611</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1620">1620</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1719">1719</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1779">1779</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1800">1800</div><div class="timeline_item_sep">...</div>
+                                                <div class="timeline_item" data-year="1822">1822</div><div class="timeline_item_sep">...</div>
+                                            </div>             
+                                        </div>
+                                        <div class="timeline_nav timeline_next"></div>
+                                    </div>
+                                </div>
+                                @@include('_box-year.html',{"nmb":1221})  
+                                @@include('_box-year.html',{"nmb":1238})  
+                                @@include('_box-year.html',{"nmb":1341})  
+                                @@include('_box-year.html',{"nmb":1392})  
+                                @@include('_box-year.html',{"nmb":1411})  
+                                @@include('_box-year.html',{"nmb":1500})  
+                                @@include('_box-year.html',{"nmb":1611})  
+                                @@include('_box-year.html',{"nmb":1620})  
+                                @@include('_box-year.html',{"nmb":1719})  
+                                @@include('_box-year.html',{"nmb":1779})  
+                                @@include('_box-year.html',{"nmb":1779})  
+                                @@include('_box-year.html',{"nmb":1800})  
+                                @@include('_box-year.html',{"nmb":1822})  
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+	@@include('_pps.html')
+	@@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

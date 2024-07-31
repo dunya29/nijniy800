@@ -1,0 +1,194 @@
+.noscroll-color {
+    background: transparent;
+}
+body {
+    min-width: 320px;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+figure, iframe, img, svg, video {
+    display: block;
+    max-width: 100%;
+}
+.h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    @media only screen and (max-width: 1279px) {
+        font-size: 20px;
+    }
+}
+.h5 {
+    font-family: "Platform";
+    font-size: 22px;
+    line-height: 1.2;
+    transition: all .3s linear;
+    @media(max-width: 1430px) {
+        font-size: 18px;
+    }
+    @media(max-width: 1279px) {
+        font-size: 16px;
+    } 
+}
+.txt-l {
+    font-family: 'Platform';
+    font-size: 70px;
+    line-height: 1;
+    @media (max-width: 1430px) {
+        font-size: 54px;
+    }
+    @media (max-width: 1279px) {
+        font-size: 42px;
+    }
+    @media (max-width: 767px) {
+        font-size: 46px;
+    }
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s linear;
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    svg {
+        stroke: #161310;
+        width: 36px;
+        height: 8px;
+        margin-left: 8px;
+    }
+}
+.main-btn {
+    position: relative;
+    padding: 17px 24px;
+    border-radius: 100px;
+    &:before {
+        background-color: #fff;
+        border-radius: 100px;
+    }
+    span {
+        font-size: 17px;
+        font-weight: 600;
+        color: #161310;
+    }
+    @media (max-width: 1430px) {
+        padding: 11px 21px;
+    }
+}
+.chevron-btn {
+    font-family: "Platform";
+    font-size: 24px;
+    padding: 0;
+    &:before {
+        content: none;
+    }
+    &:hover {
+        opacity: .5;
+    }
+}
+.section {
+    margin-bottom: 140px;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 140px;
+    }
+    .container {
+        padding-bottom: 0;
+    }
+    @media only screen and (max-width: 1430px) {
+        margin-bottom: 100px;
+        &:last-child {
+            padding-bottom: 100px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 80px;
+        &:last-child {
+            padding-bottom: 80px;
+        }
+    }
+}
+.section-sm {
+    margin-bottom: 100px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 80px;
+    }
+}
+.swiper {
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-3 {
+    .swiper {
+        position: static;
+        overflow: hidden;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 20px;
+        height: 30px;
+        background-color: transparent;
+    }
+    .swiper-button-prev {
+        left: -40px;
+        background-image: url(../img/new/icons/swiper-3-left-btn.svg);
+    }
+    .swiper-button-next {
+        right: -40px;
+        background-image: url(../img/new/icons/swiper-3-right-btn.svg);
+    }
+    @media only screen and (max-width: 1023px) {
+        .swiper-button-prev, .swiper-button-next {
+            width: 15px;
+            height: 25px;
+        }
+        .swiper-button-prev {
+            left: -25px;
+        }
+        .swiper-button-next {
+            right: -25px;
+        }
+    }
+    @media only screen and (max-width: 479px) {
+        .swiper-button-prev {
+            left: -17px;
+        }
+        .swiper-button-next {
+            right: -17px;
+        }
+    }
+}
+.mb-60 {
+    margin-bottom: 60px;
+    @media only screen and (max-width: 1279px) {
+        margin-bottom: 48px;
+    }
+}
+.media-cover {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    iframe, img, video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-right: 0!important;
+    }
+}
+.form__footer {
+    margin-top: 40px;
+    .content-block__more {
+        margin-top: 0!important;
+    }
+}

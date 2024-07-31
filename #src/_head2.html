@@ -1,0 +1,102 @@
+<head>
+	<meta name="viewport" content="shrink-to-fit=no, viewport-fit=cover, width=device-width">
+	<title>Нижний800 / Официальный портал 800-летия Нижнего Новгорода</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="# Нижний 800 ">
+	<meta name="description" content="На портале можно подать проект или идею к 800-летию города, а также узнать ключевые новости о подготовке к празднованию.">
+	<link rel="shortcut icon" href="/static/img/images/favicon.ico">
+	<meta property="og:title" content="Нижний800 / Официальный портал 800-летия Нижнего Новгорода"> <meta property="og:description" content="На портале можно подать проект или идею к 800-летию города, а также узнать ключевые новости о подготовке к празднованию.">
+	<meta property="og:url" content="https://nizhny800.ru/">
+	<meta property="og:image" content="static/img/og/og_800.png">
+	<meta property="og:image:secure_url" content="static/img/og/og_800.png">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:site name" content="# Нижний 800 ">	
+
+	<link rel="icon" href="/static/img/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/static/img/images/favicon-16.png">
+	<link rel="apple-touch-icon" sizes="16x16" href="/static/img/images/favicon-16.png">
+	<link rel="apple-touch-icon" sizes="32x32" href="/static/img/images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="48x48" href="/static/img/images/favicon-48.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="/static/img/images/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/static/img/images/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/static/img/images/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/static/img/images/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="/static/img/images/favicon-96.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/static/img/images/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/static/img/images/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/static/img/images/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/static/img/images/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="160x160" href="/static/img/images/favicon-160.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/images/favicon-180.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="/static/img/images/favicon-192.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="/static/img/images/favicon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="/static/img/images/favicon-512.png">
+
+	<link rel="stylesheet" href="static/fontsnew/stylesheet.css">
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/bundle.css">
+	<link rel="stylesheet" href="static/css/main-new.css">
+	<link rel="stylesheet" href="static/css/main.css">
+	<link rel="stylesheet" href="static/css/main-extra.css">
+
+	<link rel="stylesheet" href="static/css/media.css">
+	<link rel="stylesheet" href="static/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="static/css/special.css">
+	<link rel="stylesheet" href="static/css/talisman.css">
+	<link rel="stylesheet" href="static/css/eventsSection.css">
+	@@if (video === true) {
+		<link rel="stylesheet" href="static/css/allvideos.css">
+	}
+	@@if (eco === true) {
+		<link rel="stylesheet" href="static/css/ecostart.css">
+	}
+	@@if (yards === true) {
+	}
+	<link rel="stylesheet" href="static/css/style.min.css">
+
+    <script src="static/js/libs/imagesloaded.pkgd.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"))
+			let active = false;
+			if (lazyImages.length > 0) {
+				const lazyLoad = function () {
+				if (active === false) {
+					active = true;
+	
+					setTimeout(function () {
+						lazyImages.forEach(function (lazyImage) {
+							if ((lazyImage.getBoundingClientRect().top <= window.innerHeight + 500 && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !==
+									"none") {
+								lazyImage.src = lazyImage.dataset.src;
+								//lazyImage.srcset = lazyImage.dataset.srcset;
+								lazyImage.classList.remove("lazy");
+	
+								lazyImages = lazyImages.filter(function (image) {
+									return image !== lazyImage;
+								});
+	
+								if (lazyImages.length === 0) {
+									document.removeEventListener("scroll", lazyLoad);
+									window.removeEventListener("resize", lazyLoad);
+									window.removeEventListener("orientationchange",
+											lazyLoad);
+								}
+							}
+						});
+	
+						active = false;
+					}, 200);
+				}
+			};
+	
+			lazyLoad();
+			document.addEventListener("scroll", lazyLoad);
+			window.addEventListener("resize", lazyLoad);
+			window.addEventListener("orientationchange", lazyLoad);
+			}
+		});
+	</script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=bb34617d-47c3-4cd5-ad4a-f6e86d49022a&lang=ru_RU"></script>
+</head>

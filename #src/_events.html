@@ -1,0 +1,71 @@
+<!--events-->
+<section class="events_section">
+    <div class="grid__content">
+        <div class="content-block__title proj_title title">
+            <div class="title__name">
+                <a href="/eventpass" class="link-hov">
+                    <h3 class="events_section__title">События</h3>
+                </a>
+            </div>               
+            <div class="title__right">
+                <a href="https://nn-afisha.ru/" class="events_section__title-link">Все события</a>
+            </div>               
+        </div>                     
+        <div class="position-relative">
+            <div id="eventsSwiper" class="swiper eventsSwiper">
+                <div class="swiper-wrapper eventsSwiper__wrapper">                                    
+                    <!-- slide 1 -->                                    
+                    <div class="swiper-slide">
+                        <a onclick="showModal(this.dataset.target)" class="eventsSwiper__card" data-target="ev1" style="background-image: url('assets/eventimages/glavnaya/2.png');">
+                            <div class="eventsSwiper__cardHeader">
+                                <div class="eventsSwiper__cardBadge">Выставка</div>
+                                <span class="eventsSwiper__text">Экспозиция «Русское искусство»</span>
+                            </div>
+                            <div class="eventsSwiper__cardFooter">
+                                <div class="eventsSwiper__dateText">Постоянная экспозиция</div>
+                            </div>
+                        </a>
+                    </div>               
+                    <!-- slide 2 -->                        
+                    <div class="swiper-slide">
+                        <a onclick="showModal(this.dataset.target)" class="eventsSwiper__card" data-target="ev2" style="background-image: url('assets/eventimages/glavnaya/4.png');">
+                            <div class="eventsSwiper__cardHeader">
+                                <div class="eventsSwiper__cardBadge">Выставка</div>
+                                <span class="eventsSwiper__text">Экспозиция зарубежного искусства</span>
+                            </div>
+                            <div class="eventsSwiper__cardFooter">
+                                <div class="eventsSwiper__dateText">Постоянная экспозиция</div>
+                            </div>
+                        </a>
+                    </div>                                  
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <a onclick="showModal(this.dataset.target)" class="eventsSwiper__card" data-target="ev3" style="background-image: url('assets/eventimages/glavnaya/1.png');">
+                            <div class="eventsSwiper__cardHeader">
+                                <div class="eventsSwiper__cardBadge">Выставка</div>
+                                <span class="eventsSwiper__text">«Искусство ХХ века. 1900–1920: от символизма к авангарду»</span>
+                            </div>
+                            <div class="eventsSwiper__cardFooter">
+                                <div class="eventsSwiper__dateText">Постоянная экспозиция</div>
+                            </div>
+                        </a>
+                    </div>                      
+                    <!-- slide 4 -->                                  
+                    <div class="swiper-slide">
+                        <a onclick="showModal(this.dataset.target)" class="eventsSwiper__card" data-target="ev4" style="background-image: url('assets/eventimages/glavnaya/3.png');">
+                            <div class="eventsSwiper__cardHeader">
+                                <div class="eventsSwiper__cardBadge">Выставка</div>
+                                <span class="eventsSwiper__text">«Керамика. От горшка до шедевра»</span>
+                            </div>
+                            <div class="eventsSwiper__cardFooter">
+                                <div class="eventsSwiper__dateText">15 апреля 2023 — 10 января 2024</div>
+                            </div>
+                        </a>
+                    </div>  
+                </div>
+                <div class="swiper-button-prev" role="button" aria-label="Previous slide"></div>
+                <div class="swiper-button-next" role="button" aria-label="Next slide"></div>
+            </div>
+        </div>
+    </div>
+</section>

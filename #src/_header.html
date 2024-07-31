@@ -1,0 +1,144 @@
+<!--header-->
+@@if (main === true) {
+<header class="header fixed-block header--main">
+}
+@@if (main === false) {
+<header class="header fixed-block">
+}
+   <div class="grid__content">
+      @@if (black === true) {
+      <div class="header__inner black">
+      }
+      @@if (black === false) {
+      <div class="header__inner">
+      }
+         <div class="header__inner_item header__new">
+            <div class="item__menu">
+               <div class="item__menu_mobile">
+                  <div class="menu__mobile_item"></div>
+                  <div class="menu__mobile_item"></div>
+                  <div class="menu__mobile_item"></div>
+               </div>
+               <div class="item__menu_logo">
+                  <a href="/">
+                     <svg width="291" height="41" viewBox="0 0 291 41" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M286.829 34.5036H275.465V11.4793H286.891L286.829 34.5036ZM271.886 7.96172V38.0458H290.335V7.96172H271.886ZM204.325 38.0458V7.96172H200.722L181.781 32.4373V7.96172H178.165V38.0458H181.781L200.722 13.8654V38.0458H204.325ZM131.993 38.0458V7.96172H128.389V21.1834H115.893V7.96172H112.277V38.0458H115.893V24.7994H128.389V38.0458H131.993ZM168.165 38.0458V7.96172H164.549L145.608 32.4373V7.96172H142.005V38.0458H145.608L164.549 13.8654V38.0458H168.165ZM86.387 23.0161L100.261 38.0458H105.279L91.2821 23.0161L105.279 7.98631H100.261L86.387 23.0161ZM82.5987 38.0458H86.1656V7.96172H82.5987V38.0458ZM185.68 0.569824V4.18582H196.847V0.569824H185.68ZM82.3651 22.9915L68.4914 7.96172H63.461L77.4453 22.9915L63.4856 38.0458H68.516L82.3651 22.9915ZM260.607 34.5036H249.181V11.4793H260.607V34.5036ZM245.664 7.96172V38.0458H264.113V7.96172H245.664ZM20.3271 38.0458V7.96172H16.7234V21.1834H4.21503V7.96172H0.611328V38.0458H4.21503V24.7994H16.7234V38.0458H20.3271ZM56.4873 38.0458V7.96172H52.8466L33.9056 32.4373V7.96172H30.3388V38.0458H33.9425L52.8466 13.8408V38.0458H56.4873ZM221.114 17.8749L226.317 22.9915L221.114 28.108L228.075 35.1432L235.037 28.108L229.834 22.9915L235.037 17.8749L228.075 10.8398L221.114 17.8749ZM228.075 5.77244L240.018 17.8749L234.877 22.9915L240.08 28.108L228.137 40.2105L216.194 28.108L221.397 22.9915L216.194 17.8749L228.075 5.77244Z"/>
+                     </svg>
+                  </a>
+               </div>   
+               <div class="item__menu_user">
+                  <div class="user__weather blind_mode">
+                     <img src="static/img/eye.svg" alt="eye">
+                  </div>
+                  <a class="store__link" onclick="ym(55467490,'reachGoal','header_shop');" target="_blank" href="https://store.nizhny800.ru/">
+                     <span>Интернет-магазин</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="header__inner_item mobile-menu header__new">
+            <div class="item__menu">
+               <div class="item__menu_items">
+                  <div class="menu__items-cont">
+                     <div class="menu__items_item" data-layer="1">
+                        <a>0 800-летии</a>
+                     </div>
+                     <div class="menu__items_item" data-layer="2">
+                        <a>Проекты 800</a>
+                     </div>
+                     <div class="menu__items_item" data-layer="3">
+                        <a>Ключевые события</a>
+                     </div>
+                     <div class="menu__items_item" data-layer="4">
+                        <a>В фокусе</a>
+                     </div>
+                     <div class="menu__items_item" data-layer="5">
+                        <a>Спецпроекты</a>
+                     </div>
+                     <div class="menu__items_item news" data-layer="6">
+                        <a href="#">Пaртнёры</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="menu-store-mobile">
+                  <a class="store__link" onclick="ym(55467490,'reachGoal','header_shop');" target="_blank" href="https://store.nizhny800.ru/">
+                     <span>Интернет-магазин</span>
+                  </a>
+               </div>
+               <div class="item__menu_sn-box">
+                  <a href="https://vk.com/nizhny800" target="_blank" rel="noreferrer noopener nofollow" class="sn-box__item">
+                     <img src="static/img/vk_black.svg" alt="vk_black">
+                  </a>
+                  <a href="https://www.tiktok.com/@nizhny800" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                     <img src="static/img/tt_black.svg" alt="tt_black">
+                  </a>
+                  <a href="https://clck.ru/T8pw6" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                     <img src="static/img/ydezn.svg" alt="ydezn">
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCY9nch3eFIvRcs9i8HAb-qA" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                     <img src="static/img/youtube-152810%201.svg" alt="youtube">
+                  </a>
+               </div>
+            </div>
+            <form class="search-elem" action="" method="get">
+               <button type="button" class="search-elem-button"></button>
+               <input class="search-elem-input" type="text" name="search" id="search" value="" placeholder="Что вы ищете?">
+               <button type="button" class="search-elem-reset"></button>
+            </form>
+         </div>
+      </div>
+      <div class="header__additional-layer header__new">
+         <div class="header__additional-layer_item" data-layer="1">
+            <div>
+               <p>Нижний Новгород — центр Нижегородской области и столица Приволжского федерального округа, шестой по численности мегаполис России. Город расположен на месте встречи рек Волги и Оки в центральной части Восточно-Европейской равнины, в 400 километрах на восток от Москвы. </p>
+            </div>
+            <div>
+               <a href="about.html"> О юбилее</a>
+               <a href="history/">История города</a>
+               <a href="#">Видео</a>
+            </div>
+         </div>
+         <div class="header__additional-layer_item" data-layer="2">
+            <div>
+               <p>Специальные проекты, направленные на развитие Нижнего Новгорода в рамках 800-летия города и после юбилея</p>
+            </div>
+            <div>
+               <a href="#">Город 800</a>
+               <a href="#" target="_blank">Волонтеры 800</a>
+               <a href="#" target="_blank">800 добрых дел</a>
+               <a href="#">Команда 800</a>
+            </div>
+         </div>
+         <div class="header__additional-layer_item" data-layer="3">
+            <div>
+               <p>«Нижний 800» подготовил увлекательные интерактивы и материалы на актуальные темы. Будь в фокусе!</p>
+            </div>
+            <div>
+               <a href="#">Гала шоу Начало нового</a>
+               <a href="#">Столица закатов</a>              
+               <a href="#">Новогодняя столица</a>
+            </div>
+         </div>
+         <div class="header__additional-layer_item" data-layer="4">
+            <div>
+               <p>«Нижний 800» подготовил увлекательные интерактивы и материалы на актуальные темы. Будь в фокусе!</p>
+            </div>
+            <div>
+               <a href="#">Статьи</a>
+               <a href="#">Новости</a>              
+               <a href="#">Рекомендуем</a>
+            </div>
+         </div>
+         <div class="header__additional-layer_item" data-layer="5">
+            <div>
+               <p>Специальные проекты, направленные на развитие Нижнего Новгорода в рамках 800-летия города и после юбилея</p>
+            </div>
+            <div>
+               <a href="#">Дворы 800</a>
+               <a href="#">Экостарт 800</a>
+               <a target="_blank" rel="noopener noreferrer" href="https://name.nizhny800.ru/">Имя Нижнего</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>

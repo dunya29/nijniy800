@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    @@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+    @@include("_blind.html")
+
+
+    <div class="grid">
+    	<div class="grid__left">
+            @@include("_voting.html")
+    		@@include("_header.html",{"main": false, "black": true})
+    		<main>			
+                <div class="main__inner other__page">
+                    <section class="section contacts">
+                        <div class="grid__content">
+                            <div class="contacts__inner">
+                                <div class="contacts__block">
+                                    <h1 class="c_title">
+                                        Контакты
+                                    </h1>
+                                    <div class="c_box">
+                                        <div class="c_box_text">
+                                            АНО "ЦЕНТР 800"                                
+                                        </div>
+                                    </div>
+                                    <div class="c_box">
+                                        <div class="c_box_title">
+                                            Адрес
+                                        </div>
+                                        <div class="c_box_text">
+                                            Нижний Новгород, <br>ул. Большая Покровская, д. 20 Б                                
+                                        </div>
+                                    </div>
+                                    <div class="c_box">
+                                        <div class="c_box_title">
+                                            Email
+                                        </div>
+                                        <div class="c_box_text">
+                                            info@nizhny800.ru                                
+                                        </div>
+                                    </div>
+                                    <div class="c_box">
+                                        <div class="c_box_title">
+                                            Телефон
+                                        </div>
+                                        <div class="c_box_text">
+                                            8(831) 424-78-00                                
+                                        </div>
+                                    </div>
+                                    <div class="c_box">
+                                        <div class="c_box_title c_box_title_caret">
+                                            <span>
+                                                Реквизиты
+                                            </span>
+                                        </div>
+                                        <div class="c_box_text c_box_text_spoiler">
+                                            АНО "ЦЕНТР 800"<br><br>
+                                            ИНН 5260462119<br>
+                                            КПП 526001001<br>
+                                            ОГРН 1195275015836<br>                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__block">
+                                    <div class="c_title">
+                                        Обратная связь
+                                    </div>
+                                    <form method="" class="form js-contact-form" id="add_feedback_form" onsubmit="event.preventDefault();formSuccess(this)">
+                                        <fieldset>
+                                            <div class="info__item">
+                                                <div class="info__item__input input_box">
+                                                    <label class="error">Это поле необходимо заполнить.</label>
+                                                    <input class="error" type="text" name="fio" placeholder="ФИО" value="">
+                                                </div>
+                                            </div>
+                                            <div class="info__item info__item_i">
+                                                <div class="info__item__input input_box">
+                                                    <label class="error"></label>
+                                                    <input type="text" name="email" placeholder="Email" value="">
+                                                </div>
+                                            </div>
+                                            <div class="info__item">
+                                                <div class="info__item__input input_box">
+                                                    <label class="error"></label>
+                                                    <input type="text" name="subject" placeholder="Тема сообщения">
+                                                </div>
+                                            </div>
+                                            <div class="info__item">
+                                                <div class="info__item__input textarea_box">
+                                                    <label class="error"></label>
+                                                    <textarea placeholder="Текст вашего обращения" maxlength="3000" name="message" oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="info__item">
+                                                <div class="checkbox-box__item">
+                                                    <label class="error"></label>
+                                                    <input type="checkbox" name="agreed" id="agreed">
+                                                    <label for="agreed" class="checkbox__text checkbox__text_two">
+                                                        Я согласен на <a href="static/files/policy.pdf" target="_blank">обработку персональных данных</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__footer">
+                                            <div class="content-block__more">
+                                                <button class="content-block-more" type="submit">
+                                                    <span>Отправить</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>  
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+    		</main>
+             <!--footer-->
+    		@@include('_footer.html')
+    		@@include('_cookie.html')
+    	</div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+    @@include('_pps.html')
+    @@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+    </body>
+</html>

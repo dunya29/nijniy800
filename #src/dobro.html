@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+	@@include('_blind.html')
+
+    <div class="grid">
+	    <div class="grid__left">
+		    @@include('_voting.html')
+		    @@include('_header.html', {"main": false,"black": false})
+		    <main>
+		    	<div class="main__inner">
+                    <!--gen-sec-->
+                    <section class="section-sm gen-sec" style="background-image: url(static/img/new/dobro-bg.svg)">
+                        <div class="grid__content">
+                            <h1>800 добрых дел</h1>
+                            <div class="gen-sec__content">
+                                <p>«800 добрых дел» - проект для поддержки и развития благотворительности и волонтёрского фандрайзинга. Здесь каждый может создать собственный сбор или узнать об акциях фондов и помочь тем, кто в этом нуждается.</p>
+                                <a href="#" class="btn main-btn">
+                                    <span>Присоединиться</span>
+                                    <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!--about800-content-->
+                    <section class="section about800-content about800-content--dobro">
+                        <div class="grid__content ">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>О проекте</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-content about800-content__text">
+                                    <p>Программа «800 добрых дел» — социальное направление подготовки Нижнего Новгорода к 800-летию, которое концентрируется на благотворительности и добровольчестве.</p> 
+                                    <p>Благотворительность - одна из важнейших ценностей юбилея Нижнего Новгорода. Укрепляя традиции меценатства, создан проект «800 добрых дел».</p>
+                                </div>
+                            </div>
+						</div>
+                    </section>
+                    <!--stat-sec-->
+                    <section class="section stat-sec stat-sec--dobro" style="background-image: url(static/img/new/stat-bg-dobro.svg)">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Факты</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stat-sec__grid">
+                                    @@include('_item-stat.html',{"nmb":"13","txt":"фондов присоединились к проекту в качестве партнёров"})
+                                    @@include('_item-stat.html',{"nmb":"69","txt":"благотворительных акций было создано нижегородцами на платформе "})
+                                    @@include('_item-stat.html',{"nmb":"7","txt":"млн рублей составили сборы на благотворительность по итогам 2021 года"})
+                               </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--directs-->
+                    <section class="section directs directs--dobro">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>«800 добрых дел» развивает несколько направлений:</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="directs__grid">
+                                    @@include("_item-direct.html", {"img": "info", "title": "Cобирает актуальные акции от проверенных организаций"})
+                                    @@include("_item-direct.html", {"img": "edu", "title": "Проводит обучение для повышения уровня знаний в сфере благотворительности"})
+                                    @@include("_item-direct.html", {"img": "heart", "title": "Предоставляет платформу для волонтёрского фандрайзинга, где каждый нижегородец может открыть свой сбор пожертвований в пользу фонда-партнёра проекта"})
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--about800-content-->
+                    <section class="section about800-content about800-content--dobro">
+                        <div class="grid__content ">
+                            <div class="about800-content__grid">
+                                <img src="static/img/new/nn-logo.svg" alt="">
+                                <div class="content-block">
+                                    <div class="content-block__title">
+                                        <div class="title">
+                                            <div class="title__name">
+                                                <h3>В 2024 году проект был обновлён</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-content about800-content__text">
+                                        <p>«Нижний, помогай!» - так звучит слоган проекта «800 добрых дел», направленного на системное развитие благотворительности в Нижнем Новгороде и области, поддержку и развитие в регионе волонтерского фандрайзинга через повышение уровня вовлеченности нижегородцев и эффективности нижегородских НКО.</p> 
+                                        <p>Главная цель проекта осталась прежней — привлекать как можно больше людей для помощи тем, кто в этом нуждается. Ведь благотворительность — это добро. А добро нужно всегда. И чем больше его будет, тем лучше будем жить все мы.</p>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+                    </section>
+                    <!--txt-block-->
+                    <section class="section txt-block txt-block--dobro">
+                        <div class="grid__content">
+                            <div class="txt-block__inner">
+                                <div class="title__name"><h3>На платформе «800 добрых дел: Нижний, помогай!» каждый сможет создать сбор для фонда и помочь его подопечным.</h3></div>                           
+                                <a href="#" class="btn main-btn">
+                                    <span>Присоединиться</span>
+                                    <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+		    </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+	@@include('_pps.html')
+	@@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

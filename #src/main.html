@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+    @@include("_blind.html")
+    <div class="wrap">
+        <!--main-->  
+        <div class="grid">
+            <div class="grid__left">               
+                @@include("_voting.html")
+                @@include('_header.html', {"main": true,"black": false})       
+                <main>
+                    <div class="main__inner main__inner_index day"> 
+                        <!--intro-->          
+                        <section class="section intro">
+                            <div class="intro__top">
+                                <img src="static/img/new/intro.jpg" alt="">
+                            </div>
+                            <div class="intro__bot">
+                                <div class="grid__content">
+                                    <div class="intro__content">
+                                        <h3>Гала-шоу празднования 800-летия</h3>
+                                        <h1>Начало нового</h1>
+                                        <span class="h4 intro__date">21 августа 2021 года</span>
+                                        <p class="large">Учитывая ключевые сценарии поведения, высокое качество позиционных исследований в значительной степени обусловливает важность своевременного выполнения сверхзадачи. </p>
+                                        <a href="#" class="btn main-btn">
+                                            <span>Подробнее</span>
+                                            <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        @@include('_focus.html',{"title":"В фокусе","btn":"Все материалы"}) 
+                        <!--talisman-sec-->
+                        <section class="section talisman-sec">
+                            <div class="grid__content">                               
+                                <div class="talisman-sec__inner">
+                                    <div class="talisman-sec__content">             
+                                        <div class="title__name"><h3>Талисманы</h3></div>             
+                                        <p class="large">Талисманы 800 — дятел Гор и оленёнок Нино — уже в Нижнем Новгороде! Талисманы 800 будут встречать гостей на всех событиях празднования. Во флагманском магазине «Нижний 800» можно приобрести плюшевые игрушки в виде этих символов.</p>               
+                                        <a href="#" class="btn main-btn">
+                                            <span>Подробнее</span>
+                                            <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                        </a>
+                                    </div>
+                                    <div class="talisman-sec__img">
+                                        <img src="static/img/new/talisman-top-img.png" loading="lazy" alt="Талисманы 800-летия">
+                                    </div>
+                                </div>                          
+                            </div>
+                        </section>
+                        @@include('_project-sec.html')
+                        <!--video-->
+                        <section class="section about800-content">
+                            <div class="grid__content">
+                                <div class="content-block">
+                                    <div class="content-block__title">
+                                        <div class="title">
+                                            <div class="title__name">
+                                                <h3>«Быть, а не казаться»</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about800-content__video" data-src="https://www.youtube.com/embed/LmOt3gHrl0c">
+                                        <iframe title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                        <img src="static/img/new/main-vid-poster.jpg" alt="video-bg">
+                                        <button class="record-section__button"></button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </section>           
+                    </div>  
+                </main>
+                <!--footer-->
+                @@include('_footer.html')
+                @@include('_cookie.html')
+            </div>
+        </div>
+        @@include('_pageup.html')
+        @@include('_pps.html')
+    </div>
+    @@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

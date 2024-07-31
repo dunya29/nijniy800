@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+	@@include('_blind.html')
+
+    <div class="grid">
+	    <div class="grid__left">
+		    @@include('_voting.html')
+		    @@include('_header.html', {"main": false,"black": false})
+		    <main>
+		    	<div class="main__inner">
+                    <!--gen-sec-->
+                    <section class="mb-60 gen-sec gen-sec--about">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="static/img/new/about-bg.jpg">
+                            <img class="games-header__bg" src="static/img/new/about-bg.jpg" alt="about-bg">
+                        </picture>
+                        <div class="grid__content">
+                            <h1>О юбилее</h1>
+                            <div class="gen-sec__content">
+                                <p>21 августа 2021 года Нижний Новгород с размахом отметил большой юбилей. 800-летие стало ярким приключением для жителей и гостей города.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section about800-content">
+                        <div class="grid__content ">
+							<div class="page-content about800-content__text">
+								<p><meta charset="utf-8"></p>
+								<p><meta charset="utf-8"></p>
+								<p dir="ltr">В Нижнем Новгороде можно насладиться особым колоритом, неповторимым ландшафтом, разнообразной архитектурой. Посмотреть достопримечательности: Кремль, Ярмарку, Чкаловскую лестницу, виды на Стрелку. Удивляться, как современное искусство гармонично сочетается с многовековым наследием, и любоваться потрясающими закатами.</p>
+								<p dir="ltr">Размеренные прогулки и насыщенные выходные. Благоустроенные пространства и впечатляющие шоу. Всё это о 800-летии Нижнего Новгорода!&nbsp;</p>
+								<p dir="ltr"><strong>Юбилей Нижнего Новгорода — событие всероссийского масштаба.</strong> 21 августа 2021 года состоялась кульминация праздника — <a href="https://nizhny800.ru/gala-show"><strong>гала-шоу «Начало Нового»</strong></a>, наполненное энергией и сочетанием традиций и технологий.&nbsp;&nbsp;</p>
+								<p dir="ltr">После гала-шоу 800-летия Нижнего Новгорода жизнь в городе не затихает. Открываются благоустроенные городские парки и обновлённые достопримечательности, которые можно изучать заново, а в событийной программе впереди ещё много увлекательных мероприятий.</p>
+								<p dir="ltr"><strong>800-летие Нижнего — начало нового!</strong></p>
+							</div>
+						</div>
+                    </section>
+	                <!--projects-sec-->
+                    <section class="section projects-sec">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Проекты 800</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects-sec__grid">
+                                    @@include('_item-project2.html', {"color": "style='background:#5FD48E;'", "title":"Город 800", "txt":"Однозначно, реплицированные с зарубежных источников, современные исследования преданы",}) 
+                                    @@include('_item-project2.html', {"color": "style='background:#BC2455;'", "title":"800 добрых дел", "txt":"Однозначно, реплицированные с зарубежных источников, современные исследования преданы"}) 
+                                    @@include('_item-project2.html', {"color": "style='background:#EF212E;'", "title":"Волонтёры 800", "txt":"Однозначно, реплицированные с зарубежных источников, современные исследования преданы"}) 
+                                    @@include('_item-project2.html', {"color": "style='background:#69C8F8;'", "title":"Команда 800", "txt":"Однозначно, реплицированные с зарубежных источников, современные исследования преданы"}) 
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--video-->
+                    <section class="section about800-content">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Гала-шоу «Начало Нового»</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about800-content__video" data-src="https://www.youtube.com/embed/LmOt3gHrl0c">
+                                    <iframe title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                    <img src="static/img/new/about-vid-poster.jpg" alt="video-bg">
+                                    <button class="record-section__button"></button>
+                                </div>  
+                            </div>
+                        </div>
+                    </section>   
+                </div>
+		    </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+	@@include('_pps.html')
+	@@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    @@include('_head.html', {"game":true, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+    @@include("_blind.html")
+
+    <div class="grid">
+    	<div class="grid__left">
+            @@include("_voting.html")
+            @@include("_header.html",{"main": false, "black": false})
+    		<main>			
+                <div class="main__inner">
+                    <section class="games-header">
+                        <div class="section__inner general-section singleproject-section singleevent-section">
+                            <img loading="lazy" class="games-header__bg" src="static/img/articles-header__bg.jpg" alt="header__bg">
+                            <div class="grid__content">
+                                <div class="general-section__item">
+                                    <div class="general-section__item_title">
+                                        <h1>Статьи</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section articles">
+                        <div class="container">
+                            <div class="grid__content">
+                                <div class="articles__items">
+                                    <div class="articlesNew__item" data-aos="fade-up" data-category="articles">
+                                        <div class="media-cover"><img loading="lazy" src="assets/2023-events/Стрелка_3-mini-min.png" alt=""></div>
+    							    	<div class="articlesNew__item-category">#Статья</div>
+    							    	<div class="articlesNew__item-text">Событийная программа на 2023 год в Нижнем Новгороде</div>
+    							    	<a href="#" class="articlesNew__item-btn"><span>Подробнее</span></a>
+    							    </div>
+                                    <div class="articlesNew__item" data-aos="fade-up" data-category="articles">
+                                        <div class="media-cover"><img loading="lazy" src="assets/articles/RukamiDetyam/corner02.jpg" alt=""></div>
+    							    	<div class="articlesNew__item-category">#Статья</div>
+    							    	<div class="articlesNew__item-text">«Руками. Детям» показывает актуальность промыслов через детские изделия</div>
+    							    	<a href="#" class="articlesNew__item-btn"><span>Подробнее</span></a>
+    							    </div> 
+                                    <div class="articlesNew__item" data-aos="fade-up" data-category="articles">
+                                        <div class="media-cover"><img loading="lazy" src="assets/articles/NG2023_deti/kartochka.jpg" alt=""></div>
+    							    	<div class="articlesNew__item-category">#Статья</div>
+    							    	<div class="articlesNew__item-text">Куда сходить с детьми в новогодние праздники в Нижнем Новгороде</div>
+    							    	<a href="#" class="articlesNew__item-btn"><span>Подробнее</span></a>
+    							    </div>
+                                    <div class="articlesNew__item" data-aos="fade-up" data-category="articles">
+                                        <div class="media-cover"><img loading="lazy" src="assets/articles/2023_newyear_events/yarmarka/oblozhka.jpg" alt=""></div>
+    							    	<div class="articlesNew__item-category">#Статья</div>
+    							    	<div class="articlesNew__item-text">Новогодние гуляния на Нижегородской ярмарке</div>
+    							    	<a href="#" class="articlesNew__item-btn"><span>Подробнее</span></a>
+    							    </div>
+                                    <div class="articlesNew__item" data-aos="fade-up" data-category="articles">
+                                        <div class="media-cover"><img loading="lazy" src="assets/articles/pakgauzy_premii/oblozhka_small.jpg" alt=""></div>
+    							    	<div class="articlesNew__item-category">#Статья</div>
+    							    	<div class="articlesNew__item-text">Пакгаузы — лучшее креативное пространство</div>
+    							    	<a href="#" class="articlesNew__item-btn"><span>Подробнее</span></a>
+    							    </div>
+                                    <div class="articlesNew__item" data-aos="fade-up" data-category="articles">
+                                        <div class="media-cover"><img loading="lazy" src="assets/articles/2023_newyear_events/oblozhka_small.jpg" alt=""></div>
+    							    	<div class="articlesNew__item-category">#Статья</div>
+    							    	<div class="articlesNew__item-text">Встречаем 2023 год в Нижнем Новгороде!</div>
+    							    	<a href="#" class="articlesNew__item-btn"><span>Подробнее</span></a>
+    							    </div>		
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+		    </main>
+            <!--footer-->
+            @@include('_footer.html')
+            @@include('_cookie.html')
+        </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+    @@include('_pps.html')
+    @@include('_js.html', {"game":true, "gala":false, "sunsets": false, "ny": false})
+</body>
+</html>

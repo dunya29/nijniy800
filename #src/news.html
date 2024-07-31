@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+    @@include('_blind.html')
+
+<div class="grid">
+	<div class="grid__left">
+        @@include('_voting.html')
+        @@include('_header.html', {"main": false,"black": true})
+		<main>			
+            <div class="main__inner other__page">           
+                <section class="section news">
+                    <div class="grid__content">
+                        <div class="content-block">
+                            <div class="content-block_only_title">
+                                <h1>Новости</h1>
+                            </div>
+                            <div class="section-sm">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h2>Май</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__items">
+                                    @@include("_item-news.html", {"nmb": 1,"tag":"team800","title":"Десять проектов получат грантовую поддержку в рамках первой волны «Команды креативных практик» в этом году"})
+                                    @@include("_item-news.html", {"nmb": 2,"tag":"volunteers","title":"Более 900 заявок за 1,5 месяца подали нижегородцы для участия в проекте «Волонтёры 800»"})
+                                    @@include("_item-news.html", {"nmb": 3,"tag":"default-tag","title":"Благотворительный полумарафон «Беги, герой» прошёл 19 мая в Нижнем Новгороде!"})
+                                    @@include("_item-news.html", {"nmb": 2,"tag":"volunteers","title":"Более 900 заявок за 1,5 месяца подали нижегородцы для участия в проекте «Волонтёры 800»"})
+                                    @@include("_item-news.html", {"nmb": 3,"tag":"default-tag","title":"Благотворительный полумарафон «Беги, герой» прошёл 19 мая в Нижнем Новгороде!"})
+                                    @@include("_item-news.html", {"nmb": 1,"tag":"team800","title":"Десять проектов получат грантовую поддержку в рамках первой волны «Команды креативных практик» в этом году"})
+                                </div>
+                            </div>
+                            <div class="section-sm">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h2>Апрель</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__items">
+                                    @@include("_item-news.html", {"nmb": 1,"tag":"team800","title":"Десять проектов получат грантовую поддержку в рамках первой волны «Команды креативных практик» в этом году"})
+                                    @@include("_item-news.html", {"nmb": 2,"tag":"volunteers","title":"Более 900 заявок за 1,5 месяца подали нижегородцы для участия в проекте «Волонтёры 800»"})
+                                    @@include("_item-news.html", {"nmb": 3,"tag":"default-tag","title":"Благотворительный полумарафон «Беги, герой» прошёл 19 мая в Нижнем Новгороде!"})
+                                    @@include("_item-news.html", {"nmb": 2,"tag":"volunteers","title":"Более 900 заявок за 1,5 месяца подали нижегородцы для участия в проекте «Волонтёры 800»"})
+                                    @@include("_item-news.html", {"nmb": 3,"tag":"default-tag","title":"Благотворительный полумарафон «Беги, герой» прошёл 19 мая в Нижнем Новгороде!"})
+                                    @@include("_item-news.html", {"nmb": 1,"tag":"team800","title":"Десять проектов получат грантовую поддержку в рамках первой волны «Команды креативных практик» в этом году"})
+                                </div>
+                            </div>
+                            <div class="content-block__more">
+                                <a href="#" class="content-block-more js-action-show-more">
+                                    <span class="showcase_left_count">показать более ранние новости</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+		</main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	</div>
+</div>
+
+
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+    @@include('_pps.html')
+    @@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

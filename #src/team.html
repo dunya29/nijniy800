@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+	@@include('_blind.html')
+
+    <div class="grid">
+	    <div class="grid__left">
+		    @@include('_voting.html')
+		    @@include('_header.html', {"main": false,"black": false})
+		    <main>
+		    	<div class="main__inner">
+                    <!--gen-sec-->
+                    <section class="section-sm gen-sec" style="background-image: url(static/img/new/team-bg.svg)">
+                        <div class="grid__content">
+                            <h1>Команда 800</h1>
+                            <div class="gen-sec__content">
+                                <p>«Команда 800» — это люди, которые своим радушием и гостеприимством, самоотдачей и слаженной работой приносят пользу обществу и окружающим, а также формируют положительный имидж города и во многом определяют успех любого события.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--about800-content-->
+                    <section class="section about800-content about800-content--team">
+                        <div class="grid__content ">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>О проекте</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-content about800-content__text">
+                                    <p>В марте 2019 года, Команда правительства, при инициативе и активной поддержке Губернатора Нижегородской области – Глеба Сергеевича Никитина инициировала проект «Команда 800». Он был создан с целью вовлечения жителей города и людей с экспертными навыками в подготовку к празднованию 800-летия Нижнего Новгорода. Проект объединил в себе жителей города, проектные инициативы, экспертное сообщество и правительство Нижнего Новгорода и Нижегородской области. </p>
+                                </div>
+                            </div>
+						</div>
+                    </section>
+                     <!--tasks-->
+                     <section class="section tasks tasks--team">
+                        <div class="grid__content">
+                            <div class="text-center title__name"><h3>Перед Командой 800 было поставлено множество задач:</h3></div>
+                            <ul class="tasks__grid">
+                                <li class="h5">Вовлечение жителей города в подготовку празднования 800-летия Нижнего Новгорода</li>
+                                <li class="h5">Создание Наследия 800-летия и обеспечение преемственности поколений</li>
+                                <li class="h5">Создание эффективных механизмов взаимодействия власти, бизнеса и граждан</li>
+                                <li class="h5">Демонстрация исторического и культурного наследия</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--directs-->
+                    <section class="section directs directs--team">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Жители могли предложить любые свои инициативы по следующим направлениям:</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="directs__grid">
+                                    @@include("_item-direct.html", {"img": "study", "title": "Просвещение"})
+                                    @@include("_item-direct.html", {"img": "events", "title": "Событийная программа"})
+                                    @@include("_item-direct.html", {"img": "tourism", "title": "Туризм"})
+                                    @@include("_item-direct.html", {"img": "media", "title": "Медиапроекты и кино"})
+                                    @@include("_item-direct.html", {"img": "tech", "title": "Цифровые технологии и городская среда"})
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--stat-sec-->
+                    <section class="section stat-sec stat-sec--team" style="background-image: url(static/img/new/stat-bg-team.svg)">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Статистика Команды 800</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stat-sec__grid">
+                                    @@include('_item-stat.html',{"nmb":"5","txt":"направлений: просвещение, цифровые технологии, медиапроекты и кино, событийная программа и туризм"})
+                                    @@include('_item-stat.html',{"nmb":"1078","txt":"инициатив предложили нижегородцы с 2019 по 2021 год"})
+                                    @@include('_item-stat.html',{"nmb":"726","txt":"инициатив отобрали для размещения на портале"})
+                                    @@include('_item-stat.html',{"nmb":"649","txt":"инициатив были рассмотрены «Экспертами 800»"})
+                                    @@include('_item-stat.html',{"nmb":"116","txt":"инициатив предложили нижегородцпроектов были поддержаны в различной формеы с 2019 по 2021 год"})
+                                    @@include('_item-stat.html',{"nmb":">100","txt":"млн руб. составила общая сумма поддержки проектов"})
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--about800-content-->
+                    <section class="section about800-content about800-content--team">
+                        <div class="grid__content ">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>В 2022 команда 800 преобразовалась в команду креативных практик </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-content about800-content__text">
+                                    <p>В марте 2019 года, Команда правительства, при инициативе и активной поддержке Губернатора Нижегородской области – Глеба Сергеевича Никитина инициировала проект «Команда 800». Он был создан с целью вовлечения жителей города и людей с экспертными навыками в подготовку к празднованию 800-летия Нижнего Новгорода. Проект объединил в себе жителей города, проектные инициативы, экспертное сообщество и правительство Нижнего Новгорода и Нижегородской области. </p>
+                                </div>
+                                <a href="#" class="btn main-btn">
+                                    <span>Подробнее</span>
+                                    <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                </a>
+                            </div>
+						</div>
+                    </section>
+                    <!--tasks-->
+                    <section class="section tasks tasks--team tasks--team-2">
+                        <div class="grid__content">
+                            <div class="text-center title__name"><h3>«Команда креативных практик» призвана решать следующие задачи, направленные на развитие региона:</h3></div>
+                            <ul class="tasks__grid">
+                                <li class="h5">Сохранение и приумножение наследия 800-летия Нижнего Новгорода;</li>
+                                <li class="h5">Повышение инвестиционной и туристической привлекательности региона, раскрытие экономического, торгового и туристического потенциала региона;</li>
+                                <li class="h5">Создание эффективных механизмов взаимодействия органов исполнительной власти, бизнеса и граждан.</li>
+                                <li class="h5">Вовлечение нижегородцев в процесс создания новых продуктов, услуг, проектов в сфере креативных индустрий;</li>
+                                <li class="h5">Стимуляция роста и развития предприятий в сфере креативных индустрий;</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--directs-->
+                    <section class="section directs directs--team">
+                        <div class="grid__content">
+                            <div class="content-block">
+                                <div class="content-block__title">
+                                    <div class="title">
+                                        <div class="title__name">
+                                            <h3>Проект сфокусирован на 5 ключевых направлениях:</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="directs__grid">
+                                    @@include("_item-direct.html", {"img": "design", "title": "Архитектура и дизайн"})
+                                    @@include("_item-direct.html", {"img": "tourism", "title": "Туризм"})
+                                    @@include("_item-direct.html", {"img": "study", "title": "Просвещение"})
+                                    @@include("_item-direct.html", {"img": "gastronomy", "title": "Гастрономия"})
+                                    @@include("_item-direct.html", {"img": "culture", "title": "Культура и искусство"})
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn main-btn">
+                                        <span>Подробнее о проекте</span>
+                                        <svg><use xlink:href="static/img/new/icons/sprite.svg#chevron-right"></use></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+		    </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+	@@include('_pps.html')
+	@@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

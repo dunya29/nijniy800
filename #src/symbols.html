@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+@@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+<body>
+	@@include('_blind.html')
+    <div class="grid">
+	    <div class="grid__left">
+		    @@include('_voting.html')
+		    @@include('_header.html', {"main": false,"black": true})
+            <main>			
+                <div class="main__inner broun-body">
+                    <section>
+                        <div class="section__inner general-section general-section_showcase general-section_i general-section-inside">
+                            <div class="grid__content">
+                                <a href="#" class="kindnesses-button-back city">
+                                    <div class="kindnesses-button-back__arrow"></div>
+                                    <span class="kindnesses-button-back__text">Город 800</span>
+                                </a>
+                                <div class="general-section__item general-section__item_color-dark">                                   
+                                    <div class="general-section__item_title">
+                                        <h1>Cимволы 800</h1>
+                                    </div>
+                                    <div class="general-section__item_text">                
+                                        <p class="large">
+                                           Преобразование и перезагрузка уже ключевых городских локаций — своеобразных символов города, строительство новых глобальных объектов. Каждое из мест обладает не только страницей в истории, но и эмоционально значимо для нижегородцев.</p>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>               
+                    <section id="">
+                        <div class="section__inner general-section_showcase">               
+                            <div class="grid__content grid__content_city_in">
+                                <div class="city_sym_list">
+                                    <a href="#">
+                                        <div class="city_sym_item">
+                                            <div class="city_sym_item_img" style="background:url(assets/symbols/Kreml/kremlbig.jpg) center;background-size:cover;"></div>
+                                            <div class="city_sym_item_title_box">
+                                                <div class="city_sym_item_title_district">Нижегородский район</div>                                   
+                                                <h3 class="city_sym_item_title">Нижегородский кремль</h3>
+                                                <div class="city_sym_item_more">
+                                                    <span class="addnew_i green">
+                                                        <p><b>Подробнее</b></p>
+                                                        <div class="addnew_img green">
+                                                            <img src="static/img/whitenext.svg" alt="whitenext">
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="city_sym_item">
+                                            <div class="city_sym_item_img" style="background:url(assets/symbols/sweizaria/shweizariabig.jpg) center;background-size:cover;"></div>
+                                            <div class="city_sym_item_title_box">
+                                                <div class="city_sym_item_title_district">Приокский район</div>                                   
+                                                <h3 class="city_sym_item_title">Парк «Швейцария»</h3>
+                                                <div class="city_sym_item_more">
+                                                    <span class="addnew_i green">
+                                                        <p><b>Подробнее</b></p>
+                                                        <div class="addnew_img green ">
+                                                            <img src="static/img/whitenext.svg" alt="whitenext">
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="city_sym_item">
+                                            <div class="city_sym_item_img" style="background:url(assets/symbols/school800/sh_new_big.jpg) center;background-size:cover;">
+                                            </div>
+                                            <div class="city_sym_item_title_box">
+                                                <div class="city_sym_item_title_district">
+                                                    Нижегородский район
+                                                </div>                                   
+                                                <h3 class="city_sym_item_title">Школа 800</h3>
+                                                <div class="city_sym_item_more">
+                                                    <span class="addnew_i green">
+                                                        <p><b>Подробнее</b></p>
+                                                        <div class="addnew_img green ">
+                                                            <img src="static/img/whitenext.svg" alt="whitenext">
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                
+                </div>
+            </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+	@@include('_pps.html')
+	@@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+</body>
+
+</html>

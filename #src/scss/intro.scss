@@ -1,0 +1,79 @@
+.intro {
+    &__top {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        &:before {
+            background: linear-gradient(180deg, rgba(7, 10, 18, 0.5) 19.04%, rgba(7, 10, 18, 0) 100%),linear-gradient(180deg, rgba(7, 10, 18, 0.3) 59.36%, #070A12 98.94%);
+        }
+        img {
+            width: 100%;
+            height: calc(100vh - 45px);
+            object-fit: cover;
+        }
+    }
+    &__bot {
+        padding: 45px 0 60px;
+        background: linear-gradient(0deg, #070A12, #070A12),linear-gradient(180deg, rgba(7, 10, 18, 0.9) 0%, rgba(7, 10, 18, 0) 100%);  
+        margin-top: -2px;
+        position: relative; 
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+            background: url(../img/new/wave.png) bottom right / contain no-repeat;
+        }  
+    }
+    &__content {
+        max-width: 855px;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        h1 {
+            font-size: 90px;
+            line-height: 1.2;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            @media only screen and (max-width: 1699px) {
+                font-size: 52px;
+            }
+            @media only screen and (max-width: 1023px) {
+                font-size: 42px;
+            }
+            @media only screen and (max-width: 767px) {
+                font-size: 34px;
+            }
+        }
+        h3 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        p {
+            color: #fff;
+            max-width: 627px;
+        }
+        .main-btn {
+            margin-top: 32px;
+        }
+    }
+    &__date {
+        color: rgba(255, 255, 255, 0.6);
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+}

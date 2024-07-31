@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    @@include('_head.html', {"game":false, "gala":true, "sunsets": false, "ny": false})
+
+<body>
+    @@include("_blind.html")
+    <div class="grid">
+    	<div class="grid__left">
+            @@include("_voting.html")
+    		@@include("_header.html",{"main": false, "black": false})
+    		<main>
+                <div class="main__inner galashow">
+                    <section class="galashow-section galashow-general-section" id="general">
+                        <video id="general_video" width="1920" height="936" class="galashow-general-video" preload="auto" loop="true" autoplay="true" muted="true" playsinline="true" poster="static/videos/galashow/large/general-bg.jpg">
+                            <source id="ogv" src="static/videos/galashow/large/video.ogv" type="video/ogv;">
+                            <source id="mp4_265" src="static/videos/galashow/large/video.mp4" type="video/mp4;">
+                            <source id="mp4_264" src="static/videos/galashow/large/video-265.mp4" type="video/mp4;">
+                            <source id="webm" src="static/videos/galashow/large/video.webm" type="video/webm;">
+                        </video>
+                        <a href="https://youtu.be/ivDfghj9aBA" target="_blank" class="galashow-general-button orange-btn tourist-btn">
+                            <span>Смотреть запись трансляции гала-шоу</span>
+                        </a>                      
+                    </section>
+                    <section class="galashow-section galashow-group-section" id="information-3">
+                        <img loading="lazy" src="static/img/galashow/blockquote-gala-bg.jpg" alt="galashow-group-bg" class="galashow-group-bg">
+                        <div class="grid__content">
+                            <div class="information-section__part">
+                                <div class="gala-blockquotes">
+                                    <div class="content-block__title big-margin partners-box__title">
+                                        <div class="title">
+                                            <div class="title__name">
+                                              <h3></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gala-blockquotes__content">
+                                        <div class="blockquotes-item">
+                                            <div class="blockquotes-item__head">
+                                              <div class="blockquotes-item__photo">
+                                                <img loading="lazy" src="assets/gala/posle/putin.jpg" alt="Владимир Путин">
+                                              </div>
+                                              <div class="blockquotes-item__heading">
+                                                <span class="blockquotes-item__name">Владимир Путин</span>
+                                                <span class="blockquotes-item__position">Президент Российской Федерации</span>
+                                              </div>
+                                            </div>
+                                            <blockquote class="blockquotes-item__text">
+                                              Искренне, от всей души поздравляю вас с 800-летием Нижнего Новгорода. Поздравляю всех, кто здесь родился, вырос, чья жизнь, учёба, свершения, первая любовь, самые добрые семейные воспоминания связаны с этим прекрасным городом… Нижний — как его издавна ласково и тепло называют — хранит ключ к пониманию широты души, веры и непреклонной воли нашего народа, его стремления к созиданию и сотрудничеству. Здесь буквально сконцентрированы культурный код, национальная идентичность, мощь и размах народа России. 
+                                            </blockquote> 
+                                        </div>
+                                        <div class="blockquotes-item">
+                                            <div class="blockquotes-item__head">
+                                                <div class="blockquotes-item__photo">
+                                                  <img loading="lazy" src="assets/gala/posle/Nikitin.png" alt="Глеб Никитин">
+                                                </div>
+                                                <div class="blockquotes-item__heading">
+                                                  <span class="blockquotes-item__name">Глеб Никитин</span>
+                                                  <span class="blockquotes-item__position">Губернатор Нижегородской области</span>
+                                                </div>
+                                            </div>
+                                            <blockquote class="blockquotes-item__text">
+                                              Юбилей — это не точка, не финал истории, а лишь один из этапов, начало нового. Историческая роль Нижнего Новгорода и Нижегородской области, наш экономический потенциал, талантливые жители — всё это даёт бесконечные возможности для будущих изменений. Желаю всем нижегородцам как можно больше светлых и радостных моментов. Пусть восемь веков нашей истории вдохновляют на новые свершения!              
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="galashow-section galashow-information-section" id="information">
+                        <div class="grid__content">
+                            <div class="information-section__part">
+                                <div class="content-block__title big-margin">
+                                  <div class="title">
+                                    <div class="title__name">
+                                      <h3>Как это было</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="galashow-advantages">                                          
+                                    <div class="galashow-advantages__item">
+                                      <h4 class="galashow-advantages__icon">9</h4>
+                                      <p class="galashow-advantages__caption">площадок празднования<br>по всему городу</p>
+                                    </div>
+                                    <div class="galashow-advantages__item">
+                                      <h4 class="galashow-advantages__icon">34</h4>
+                                      <p class="galashow-advantages__caption">дня возводили<br>главную сцену</p>
+                                    </div>
+                                    <div class="galashow-advantages__item">
+                                      <h4 class="galashow-advantages__icon">560</h4>
+                                      <p class="galashow-advantages__caption">артистов-участников<br>гала-шоу</p>
+                                    </div>        
+                                </div>
+                                <article class="galashow-advantages-descriprtion">
+                                    <p><meta charset="utf-8"></p>
+                    
+                                    <p dir="ltr"><meta charset="utf-8">Нижний Новгород с размахом отметил своё 800-летие. Кульминация празднования состоялась <strong>21 августа 2021 года, начавшись ровно в 20:21</strong>.</p>
+                                    
+                                    <p dir="ltr">Юбилейные торжества охватили <strong>весь город</strong>: 9 площадок празднования, 9 артистов-хедлайнеров, 7 оркестров, 23 ансамбля, 11 кавер-групп.</p>
+                                    
+                                    <p dir="ltr">Кульминацией стало невероятное <strong>гала-шоу «Начало Нового»</strong>, наполненное энергией и сочетанием традиций и технологий.&nbsp;</p>
+                                    
+                                    <p dir="ltr">Специально для события в акватории Волги и Оки в течение 34 дней возводили <strong>уникальную сцену.</strong> Для её строительства потребовалась помощь водолазов — площадка была погружена в воду на глубину до 4 метров. Подобных сценических конструкций в России ещё не строили. В этом году это самая масштабная сцена в России: ширина — более 108 метров, глубина — 52 метра, высота — около 30 метров.</p>
+                                    
+                                    <p dir="ltr">Место для сцены выбрали не случайно: именно на Стрелке и был основан Нижний Новгород.</p>
+                                    
+                                    <p dir="ltr"><strong>Образ сцены символизирует слияние прошлого и будущего, как река жизни.</strong> Это многогранный символ, который объединяет в себе: стихии природы — реки Волга и Ока; рассветы и закаты; уникальное место силы; расположение города. Слияние разного создает одно общее целое — образ великого многогранного города, устремлённого в будущее. Города с великой историей, города прогрессивных технологий.</p>
+                                    
+                                    <p dir="ltr">Режиссёром шоу «Начало Нового» стал <strong>Илья Авербух</strong> — заслуженный мастер спорта, чемпион Европы и мира, призёр олимпийских игр в танцах на льду.</p>
+                                    
+                                    <p dir="ltr">В шоу приняли участие<strong> 560 артистов</strong>, большая часть — нижегородцы.</p>
+                                    
+                                    <p dir="ltr">Среди <strong>элементов</strong> особенно можно выделить шоу дронов над акваторией рек (квадрокоптеры создали в небе ЗD-картинки Дмитриевской башни кремля, собора Александра Невского, образы Минина и Пожарского, а также изображения рек и герба Нижегородской области), парад судов на подводных крыльях («Валдай», «Метеор») и выступления флайбордистов.</p>
+                                    
+                                    <p dir="ltr">В завершении вечера небо украсил <strong>невероятный фейерверк.</strong> Тоже над рекой. Салют запускали с 6 барж, установив рекорд России по длине залповой линии — около 800 метров.</p>
+                                    
+                                    <p dir="ltr">Торжественная программа стала ещё одной визитной карточкой города.</p>
+                                </article>
+                            </div>               
+                        </div>
+                        <div class="galashow-lights galashow-information-lights">
+                            <div class="galashow-lights__item"></div>
+                            <div class="galashow-lights__item"></div>
+                            <div class="galashow-lights__item"></div>
+                        </div>
+                    </section>               
+                    <section class="galashow-section galashow-record-section">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">                   
+                                <div class="swiper-slide galashow-record" id="video-record" data-src="https://youtu.be/LmOt3gHrl0c">
+                                    <iframe title="YouTube video player" frameborder="0" class="record-section__video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                    <img loading="lazy" class="record-section__cover" src="assets/gala/Obzorpreview.jpg" alt="video-record-cover">
+                                    <button class="record-section__button" title="play"></button>
+                                </div>      
+                            </div>
+                        </div>
+                        <button class="swiper-button swiper-button-prev"></button>
+                        <button class="swiper-button swiper-button-next"></button>
+                    </section>
+                    <section class="galashow-section video-slider-section galashow-information-section" id="information-4">
+                        <div class="grid__content">
+                            <div class="video-slider-box">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="video-slider-preview pp_" data-pp="video-slider" style="background-image: url(assets/gala/youtube_oblozhki/1.png);" data-src="https://youtu.be/0zZy484wUpc">
+                                              <button class="video-slider-button">
+                                                <img loading="lazy" src="static/img/galashow/video-slider-button.svg" alt="Запустить видео" title="Запустить видео">
+                                              </button>
+                                            </div>
+                                            <span class="video-slider-label">«Энергия рек»</span>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="video-slider-preview pp_" data-pp="video-slider" style="background-image: url(assets/gala/youtube_oblozhki/2.png);" data-src="https://youtu.be/iXKgqUVIwKQ">
+                                                <button class="video-slider-button">
+                                                    <img loading="lazy" src="static/img/galashow/video-slider-button.svg" alt="Запустить видео" title="Запустить видео">
+                                                </button>
+                                            </div>
+                                            <span class="video-slider-label">«Танцующий город»</span>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="video-slider-preview pp_" data-pp="video-slider" style="background-image: url(assets/gala/youtube_oblozhki/3.png);" data-src="https://youtu.be/IUe3Escgm14">
+                                                <button class="video-slider-button">
+                                                  <img loading="lazy" src="static/img/galashow/video-slider-button.svg" alt="Запустить видео" title="Запустить видео">
+                                                </button>
+                                            </div>
+                                            <span class="video-slider-label">Шоу дронов</span>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="video-slider-preview pp_" data-pp="video-slider" style="background-image: url(assets/gala/youtube_oblozhki/4.png);" data-src="https://youtu.be/ugMd6fYsxHo">
+                                                <button class="video-slider-button">
+                                                    <img loading="lazy" src="static/img/galashow/video-slider-button.svg" alt="Запустить видео" title="Запустить видео">
+                                               </button>
+                                            </div>
+                                            <span class="video-slider-label">«Перезвоны»</span>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <button class="swiper-button swiper-button-prev"></button>
+                                <button class="swiper-button swiper-button-next"></button>
+                            </div>
+                            <a href="https://youtu.be/ivDfghj9aBA" target="_blank" rel="noreferrer noopenner" class="galashow-button full-width galashow-group-button">
+                                <span>Смотреть запись трансляции гала-шоу</span>
+                            </a>
+                        </div>
+                        <div class="galashow-lights galashow-information-lights">
+                            <div class="galashow-lights__item"></div>
+                            <div class="galashow-lights__item"></div>
+                        </div>
+                    </section>
+                    <section class="galashow-section galashow-gallery-section" id="gallery">             
+                        <picture class="pp_ galashow-gallery-item" data-img-id="1" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/1.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="2" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/3.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="3" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/10.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="4" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/5.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="5" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/31.png" alt="1" class="lazy">
+                        </picture>
+                    </section>
+                    <section class="galashow-section galashow-gallery-section galashow-another-gallery" id="gallery2">               
+                        <picture class="pp_ galashow-gallery-item" data-img-id="6" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/9.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="7" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/6.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="8" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/4.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="9" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/8.png" alt="1" class="lazy">
+                        </picture>
+                        <picture class="pp_ galashow-gallery-item" data-img-id="10" data-pp="gala-gallery">
+                          <img data-src="assets/gala/posle/7.png" alt="1" class="lazy">
+                        </picture>
+                    </section>                
+                    <section class="galashow-section galashow-information-section" id="information-2">
+                        <div class="grid__content">
+                            <div class="information-section__part">
+                                <a href="https://youtu.be/ivDfghj9aBA" target="_blank" rel="noreferrer noopenner" class="galashow-button full-width galashow-group-button">
+                                    <span>Смотреть запись трансляции гала-шоу</span>
+                                </a>
+                                <div class="galashow-people">
+                                    <div class="galashow-people__box">
+                                        <h3 class="galashow-people__title">В праздничном шоу приняли участие многие известные нижегородцы:</h3>
+                                        <div class="galashow-people__container swiper-container_gala-four">
+                                            <div class="swiper-container">
+                                              <div class="swiper-wrapper">
+                                                <div class="swiper-slide galashow-people__item">
+                                                    <div class="galashow-people__photo">
+                                                       <img loading="lazy" src="assets/gala/Artists/maxim.png" alt="Максим Емельянычев">
+                                                    </div>
+                                                    <div class="galashow-people__body">
+                                                        <h4 class="galashow-people__item__name">Максим Емельянычев</h4>
+                                                        <p class="galashow-people__item__description">
+                                                          Российский дирижёр и клавесинист, с 2019 года — главный дирижёр Шотландского камерного оркестра, номинант на премию «Грэмми» в 2017 году                      </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide galashow-people__item">
+                                                    <div class="galashow-people__photo">
+                                                      <img loading="lazy" src="assets/gala/Artists/1.png" alt="Даниил Трифонов">
+                                                    </div>
+                                                    <div class="galashow-people__body">
+                                                      <h4 class="galashow-people__item__name">Даниил Трифонов</h4>
+                                                      <p class="galashow-people__item__description">Обладатель «Грэмми», российский пианист и композитор, лауреат российских и международных музыкальных конкурсо</p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide galashow-people__item">
+                                                    <div class="galashow-people__photo">
+                                                      <img loading="lazy" src="assets/gala/Artists/2.png" alt="Наталья Водянова">
+                                                    </div>
+                                                    <div class="galashow-people__body">
+                                                      <h4 class="galashow-people__item__name">Наталья Водянова</h4>
+                                                      <p class="galashow-people__item__description">Супермодель и основатель благотворительного фонда «Обнажённые сердца»</p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide galashow-people__item">
+                                                    <div class="galashow-people__photo">
+                                                      <img loading="lazy" src="assets/gala/Artists/sisters.png" alt="Дина и Арина Аверины">
+                                                    </div>
+                                                    <div class="galashow-people__body">
+                                                        <h4 class="galashow-people__item__name">Дина и Арина Аверины</h4>
+                                                        <p class="galashow-people__item__description">Члены сборной команды России по художественной гимнастике. Заслуженные мастера спорта России.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide galashow-people__item">
+                                                   <div class="galashow-people__photo">
+                                                     <img loading="lazy" src="assets/gala/Artists/5.png" alt="Владимир и Сергей Кристовские">
+                                                   </div>
+                                                   <div class="galashow-people__body">
+                                                     <h4 class="galashow-people__item__name">Владимир и Сергей Кристовские</h4>
+                                                     <p class="galashow-people__item__description">Группа Uma2rman</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-navigation">
+                                                <button class="swiper-button swiper-button-prev"></button>
+                                                <button class="swiper-button swiper-button-next"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galashow-people__box">
+                                        <h3 class="galashow-people__title">Артисты, принимавшие участие в гала-шоу:</h3>
+                                        <div class="galashow-people__container swiper-container_gala-five">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide galashow-people__item">
+                                                        <div class="galashow-people__photo">
+                                                          <img loading="lazy" src="assets/gala/Artists/22.png" alt="Группа «Любэ»">
+                                                        </div>
+                                                        <div class="galashow-people__body">
+                                                          <h4 class="galashow-people__item__name">Группа «Любэ»</h4>
+                                                          <p class="galashow-people__item__description">Российская рок-группа</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide galashow-people__item">
+                                                        <div class="galashow-people__photo">
+                                                          <img loading="lazy" src="assets/gala/Artists/basta.png" alt="Баста">
+                                                        </div>
+                                                        <div class="galashow-people__body">
+                                                          <h4 class="galashow-people__item__name">Баста</h4>
+                                                          <p class="galashow-people__item__description">Российский музыкант</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide galashow-people__item">
+                                                        <div class="galashow-people__photo">
+                                                          <img loading="lazy" src="assets/gala/Artists/11.png" alt="Леван Горозия (L’One)">
+                                                        </div>
+                                                        <div class="galashow-people__body">
+                                                          <h4 class="galashow-people__item__name">Леван Горозия (L’One)</h4>
+                                                          <p class="galashow-people__item__description">Рэп-исполнитель</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide galashow-people__item">
+                                                        <div class="galashow-people__photo">
+                                                            <img loading="lazy" src="assets/gala/Artists/panayotov.png" alt="Александр Панайотов">
+                                                        </div>
+                                                        <div class="galashow-people__body">
+                                                            <h4 class="galashow-people__item__name">Александр Панайотов</h4>
+                                                            <p class="galashow-people__item__description">Певец</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide galashow-people__item">
+                                                        <div class="galashow-people__photo">
+                                                            <img loading="lazy" src="assets/gala/Artists/55.png" alt="Алексей Воробьёв">
+                                                        </div>
+                                                        <div class="galashow-people__body">
+                                                            <h4 class="galashow-people__item__name">Алексей Воробьёв</h4>
+                                                            <p class="galashow-people__item__description">Певец</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide galashow-people__item">
+                                                        <div class="galashow-people__photo">
+                                                          <img loading="lazy" src="assets/gala/Artists/8.png" alt="Сергей Мазаев">
+                                                        </div>
+                                                        <div class="galashow-people__body">
+                                                          <h4 class="galashow-people__item__name">Сергей Мазаев</h4>
+                                                          <p class="galashow-people__item__description">Певец</p>
+                                                        </div>
+                                                    </div>                                                       
+                                                </div>
+                                            </div>
+                                            <div class="swiper-navigation">
+                                                <button class="swiper-button swiper-button-prev"></button>
+                                                <button class="swiper-button swiper-button-next"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>               
+                        <div class="galashow-lights galashow-information-lights">
+                          <div class="galashow-lights__item"></div>
+                          <div class="galashow-lights__item"></div>
+                          <div class="galashow-lights__item"></div>
+                        </div>
+                    </section>
+                    <section class="galashow-section galashow-partners-section" id="partners">
+                        <div class="grid__content">
+                          <!-- этот блок взят со страницы партнёры -->
+                            <div class="partners-box partners-box__galashow" data-category="4">
+                                <div class="content-block__title big-margin partners-box__title">
+                                  <div class="title">
+                                    <div class="title__name">
+                                      <h3>Партнёры</h3>
+                                    </div>
+                                  </div>
+                                </div>                     
+                                <div class="partners-box__items">
+                                    <div class="partners-box__item">
+                                      <a href="https://www.volgaflot.com/" target="_blank" rel="nofollow"><div class="partners-box__logo">
+                                        <img loading="lazy" src="assets/Partners/Glavnaya/volzh.png" alt="Акционерное общество «Судоходная компания «Волжское пароходство»">
+                                      </div></a>
+                                      <div class="partners-box__text"></div>
+                                    </div>
+                                    <div class="partners-box__item">
+                                        <a href="https://www.vtb.ru/" target="_blank" rel="nofollow"><div class="partners-box__logo">
+                                          <img loading="lazy" src="assets/Partners/Glavnaya/05.png" alt="ВТБ">
+                                        </div></a>
+                                        <div class="partners-box__text"></div>
+                                    </div>
+                                    <div class="partners-box__item">
+                                        <a href="https://www.rosatom.ru/" target="_blank" rel="nofollow">
+                                            <div class="partners-box__logo">
+                                                <img loading="lazy" src="assets/Partners/Glavnaya/RosAtom%20logo.png" alt="Государственная корпорация по атомной энергии «Росатом»">
+                                            </div>
+                                        </a>
+                                        <div class="partners-box__text"></div>
+                                    </div>
+                                    <div class="partners-box__item">
+                                        <a href="https://rostec.ru/" target="_blank" rel="nofollow">
+                                            <div class="partners-box__logo">
+                                                <img loading="lazy" src="assets/Partners/Glavnaya/rostec.png" alt="Ростех">
+                                            </div>
+                                        </a>
+                                        <div class="partners-box__text"></div>
+                                    </div>
+                                    <div class="partners-box__item">
+                                        <a href="https://www.transneft.ru/" target="_blank" rel="nofollow">
+                                            <div class="partners-box__logo">
+                                                <img loading="lazy" src="assets/Partners/Glavnaya/01.png" alt="транснефть">
+                                            </div>
+                                        </a>
+                                        <div class="partners-box__text"></div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                    </section>               
+                </div>              
+                <div class="pp pp_gala-gallery" data-mod="gala-gallery">
+                  <div class="pp__bg"></div>
+                  <div class="pp-cross"></div>
+                  <div class="pp__content gala-gallery__content">
+                    <div class="gala-gallery-box">
+                        <div class="swiper-container gala-gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-img-id="1">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/1.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="2">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/3.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="3">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/10.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="4">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/5.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="5">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/31.png" alt="1">
+                                </div>          
+                                <div class="swiper-slide" data-img-id="6">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/9.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="7">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/6.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="8">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/4.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="9">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/8.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="10">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/7.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div thumbsslider="" class="swiper-container gala-gallery-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-img-id="1">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/1.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="2">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/3.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="3">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/10.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="4">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/5.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="5">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/31.png" alt="1">
+                                </div>         
+                                <div class="swiper-slide" data-img-id="6">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/9.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="7">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/6.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="8">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/4.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="9">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/8.png" alt="1">
+                                </div>
+                                <div class="swiper-slide" data-img-id="10">
+                                  <img loading="lazy" data-pp="gala-gallery" src="assets/gala/posle/7.png" alt="1">
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>                
+                <div class="pp video-slider" data-mod="video-slider">
+                  <div class="pp__bg"></div>
+                  <div class="pp__content video-slider__content">
+                    <div class="pp-cross"></div>
+                    <iframe class="video-slider__player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+            </main>
+             <!--footer-->
+    		@@include('_footer.html')
+    		@@include('_cookie.html')
+    	</div>
+    </div>
+    @@include('_fixed.html')
+    @@include('_pageup.html')
+    @@include('_pps.html')
+    @@include('_js.html', {"game":false, "gala":true, "sunsets": false, "ny": false})
+    </body>
+</html>
