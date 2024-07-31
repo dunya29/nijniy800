@@ -6566,7 +6566,7 @@ span.events__box_item_date_item_day {
     }
 
     .section__inner.general-section.kindnesses-inside {
-        background-image: url(static/img/kindnesses-inside-bg.png);
+        background-image: url(../img/kindnesses-inside-bg.png);
         background-position: right 70%;
     }
 
@@ -9009,7 +9009,7 @@ span.events__box_item_date_item_day {
 
     .section__inner.general-section.general-section_showcase .general-section__item_text {
         width: 50%;
-        padding: 0;
+        padding: 0 0 0 30px;
     }
 
     .section__inner.general-section.general-section_showcase .showcase_buttons .addnew_img img {
@@ -9510,7 +9510,7 @@ span.events__box_item_date_item_day {
     }
 
     .section__inner.general-section.kindnesses-inside {
-        background-image: url(static/img/kindnesses-inside-bg.png);
+        background-image: url(../img/kindnesses-inside-bg.png);
         background-position: 150% 80%;
         -webkit-background-size: 60% 60%;
         -moz-background-size: 60%;
@@ -10779,7 +10779,6 @@ span.events__box_item_date_item_day {
     .item__menu_logo {
         z-index: 10;
     }
-
     header.scroll .item__menu_mobile{
         background-color: white;
     }
@@ -14283,6 +14282,7 @@ span.events__box_item_date_item_day {
 
     .section__inner.general-section.general-section_showcase .general-section__item_text {
         width: 100%;
+        padding: 0;
     }
 
     .showcase-buttons__row:nth-child(1) .button.go_down_in_history:nth-child(1) {

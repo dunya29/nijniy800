@@ -1,7 +1,7 @@
 var mobile = (/iphone|iemobile|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 var swiper_news = '';
 if ($(".news-swiper").length > 0) {
-    swiper_news2 = new Swiper('.news-swiper .swiper-container', {
+    swiper_news = new Swiper('.news-swiper .swiper-container', {
         observer: true,
         observeParents: true,
         slidesPerView: 1,
@@ -23,30 +23,30 @@ if ($(".news-swiper").length > 0) {
         speed: 800
     });
 } 
-
-const swiper_events = new Swiper('.swiper-container_events', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    speed: 1500,
-
-    loop: false,
-    autoplay: {
-        disableOnInteraction: true,
-    },
-    nav: true,
-    navigation: {
-        nextEl: '.swiper-navigation_events .swiper-button-next',
-        prevEl: '.swiper-navigation_events .swiper-button-prev',
-    },
-    breakpoints: {
-        767: {
-            slidesPerView: 1
+var swiper_events = '';
+if ($(".swiper-container_events").length > 0) {
+    swiper_events = new Swiper('.swiper-container_events', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1500,
+    
+        loop: false,
+        autoplay: {
+            disableOnInteraction: true,
+        },
+        nav: true,
+        navigation: {
+            nextEl: '.swiper-navigation_events .swiper-button-next',
+            prevEl: '.swiper-navigation_events .swiper-button-prev',
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 1
+            }
         }
-    }
-});
-
+    });
+}
 var swiperArticlesSymbol = !1;
-
 $("#articlesNew-symbol").length > 0 && (
     swiperArticlesSymbol = new Swiper("#articlesNew-symbol", {
         slidesPerView: "auto",
@@ -823,7 +823,7 @@ $(document).ready(function () {
 
     function activeMobileSlider() {
         if (window.innerWidth < 767) {
-            if (!swiperMembersinit) {
+            if (!swiperMembersinit && $('.swiper-container-members').length > 0) {
                 swiperMembersinit = true
                 swiperMembers = new Swiper('.swiper-container-members', {
                     observer: true,
@@ -847,7 +847,7 @@ $(document).ready(function () {
                     }
                 });
             }
-            if (!swiperEventsInit) {
+            if (!swiperEventsInit && $('.swiper-container_ecostart-events').length > 0) {
                 swiperEventsInit = true
                 swiperEvents = new Swiper('.swiper-container_ecostart-events', {
                     observer: true,

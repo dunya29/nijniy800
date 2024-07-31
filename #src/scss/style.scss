@@ -1,6 +1,20 @@
 @import "old";
 @import "general.scss";
 @import "intro.scss";
+.header {
+    transition: transform .3s linear;
+    &.unshow {
+        transform: translateY(-100%);
+    }
+    @media only screen and (max-width: 767px) {
+        &__inner {
+           // transition: transform .3s linear;
+        }
+        &.unshow .header__inner {
+            transform: translateY(-100%);
+        }
+    }
+}
 .talisman-sec {
     background: url(../img/talisman-top-bg.jpg) center / cover no-repeat;
     h3 {
@@ -589,9 +603,26 @@
         }
     }
 }
-#yardsMap [class*=balloon__tail] {
+.yardsmap-baloon {
+    word-break: break-word;
+    &__img  {
+        flex-shrink: 0;
+    }
+    @media only screen and (max-width: 767px) {
+        &__content {
+            padding: 10px 0 10px 10px;
+        }
+        &__content-link {
+            min-width: 100px;
+        }
+    }
+}
+#yardsMap [class*=balloon__tail], #yardsMap [class*=gototech] {
     display: none
 }
-#yardsMap [class*=balloon_layout] {
+#yardsMap [class*=balloon_layout], #yardsMap [class*=balloon__layout] {
     border-radius: 10px;
+}
+#yardsMap [class*=balloon__close]+[class*=balloon__content] {
+    margin-right: 24px;
 }

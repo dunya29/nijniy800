@@ -1596,7 +1596,7 @@ a.tal_test_result_share_item.tal_test_result_share_tw:before {
 }*/
 
 .section__inner.general-section.general-section_talisman {
-    background: url('static/img/talisman-top-bg.jpg') no-repeat center !important;
+    background: url('../img/talisman-top-bg.jpg') no-repeat center !important;
     background-size: cover !important;
 }
 
@@ -2653,7 +2653,7 @@ a.tal_test_result_share_item.tal_test_result_share_tw:before {
 /*november*/
 
 .section__inner.general-section.general-section_talisman.general-section_november {
-    background: url(static/img/november/back.jpg) no-repeat center !important;
+    background: url(../img/november/back.jpg) no-repeat center !important;
     background-size: cover !important;
 }
 .section__inner.general-section.general-section_talisman.general-section_november h1{

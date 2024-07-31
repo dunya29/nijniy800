@@ -1,3 +1,11 @@
+document.querySelector(".preloader") && document.addEventListener("DOMContentLoaded", (e=>{
+  setTimeout((()=>{
+      enableScroll(),
+      document.body.classList.add("loaded")
+  }
+  ), 100)
+}
+));
 const mobMenu = document.querySelector(".mobile-menu")
 const modal = document.querySelectorAll(".pp")
 const modalOpenBtn = document.querySelectorAll("[data-pp]")
@@ -100,6 +108,23 @@ function formSuccess(form) {
   openModal(successModal)
   
 }
+// fixed header
+const header = document.querySelector(".header")
+function scrollPos() {
+  return window.pageYOffset || document.documentElement.scrollTop;
+}
+let lastScroll = scrollPos();
+window.addEventListener("scroll", () => {
+  if (scrollPos() > 1) {
+      if ((scrollPos() > 150 && scrollPos() > lastScroll && !header.classList.contains("unshow"))) {
+          header.classList.add("unshow")
+      } else if ((scrollPos() < lastScroll && header.classList.contains("unshow")) || scrollPos() < 150) {
+          header.classList.remove("unshow")
+      }
+  } 
+  lastScroll = scrollPos()
+}) 
+
 const swiper3 = document.querySelectorAll(".swiper-3")
 if (swiper3) {
   swiper3.forEach(item => {
