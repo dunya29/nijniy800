@@ -45,11 +45,11 @@ $(document).ready(function () {
         spaceBetween: 11,
         slidesPerView: 1,
       },
-      1279: {
+      1280: {
         slidesPerView: 1,
         spaceBetween: 16,
       },
-      767: {
+      768: {
         slidesPerView: 1,
         spaceBetween: 20,
       },

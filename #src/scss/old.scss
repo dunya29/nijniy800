@@ -221,7 +221,7 @@
     .articlesNew__item {
         width: 100%;
         margin-bottom: 0;
-        @media (min-width: 1279px) and (max-width: 1430px) {
+        @media (min-width: 1280px) and (max-width: 1430px) {
             min-height: 400px;
         }
     }
@@ -240,12 +240,40 @@
         grid-template-columns: 1fr;
     }
 }
+.mp_items_list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+    @media only screen and (max-width: 1023px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
 .mp_items_item {
+    width: 100%!important;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 0!important;
     &_text {
-        flex: 1 1 auto
+        height: auto!important;
+        flex: 1 1 auto;
+        display: -webkit-box;
+        -webkit-line-clamp: 20;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media only screen and (max-width: 1440px) {
+            -webkit-line-clamp: 19;
+        }
+        @media only screen and (max-width: 1279px) {
+            -webkit-line-clamp: 18;
+        }
+    }
+    @media only screen and (max-width: 1023px) {
+        display: block;
+        height: auto;
     }
 }
 .about800-content, .directs, .txt-block {
@@ -399,6 +427,7 @@
     }  
 }
 .footer {
+    height: auto;
     opacity: 1;
     span.f_mail_ico {
         margin-right: 8px;
@@ -635,7 +664,7 @@ a.footer__link.footer__links-head {
     background: url(../img/new/icons/video-play.svg) center/contain no-repeat;
 }
 .page-content.about800-content__text {
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 768px) {
         p {
             font-size: 20px;
             margin-bottom: 32px;
@@ -693,9 +722,6 @@ a.footer__link.footer__links-head {
         font-size: 40px;
     }
 }
-.pp {
-    width: 100%;
-}
 .pp-partner {
     .pp__content, .pp-content {
         position: static;
@@ -738,4 +764,39 @@ a.footer__link.footer__links-head {
         }
     }
 }
-
+.general-section_showcase-sh {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        padding-bottom: 40px;
+    }
+}
+.galashow-general-section {
+    height: auto!important;
+    @media (min-width: 768px) and (max-width: 1279px) {
+        video {
+            margin-top: -100px;
+        }
+    }
+}
+.galashow-general-button.tourist-btn {
+    bottom: 20px;
+}
+.blind-panel {
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    .button.blind_mode {
+        padding: 3px 1px;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        & > div {
+            margin-right: 5px;
+        }
+    }
+}
+body.special.white_black .user__weather.blind_mode img {
+    filter: unset;
+}

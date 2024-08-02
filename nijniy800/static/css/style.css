@@ -175,7 +175,15 @@
   margin-bottom: 0;
 }
 
+.mp_items_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
 .mp_items_item {
+  width: 100% !important;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,12 +194,19 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  margin-right: 0 !important;
 }
 
 .mp_items_item_text {
+  height: auto !important;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 20;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .about800-content .main-btn,
@@ -345,6 +360,7 @@
 }
 
 .footer {
+  height: auto;
   opacity: 1;
 }
 
@@ -557,10 +573,6 @@ a.footer__link.footer__links-head:hover {
   transform: scale(1.05, 1);
 }
 
-.pp {
-  width: 100%;
-}
-
 .pp-partner .pp__content,
 .pp-partner .pp-content {
   position: static;
@@ -595,6 +607,32 @@ a.footer__link.footer__links-head:hover {
   align-self: center;
 }
 
+.galashow-general-section {
+  height: auto !important;
+}
+
+.galashow-general-button.tourist-btn {
+  bottom: 20px;
+}
+
+.blind-panel {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.blind-panel .button.blind_mode {
+  padding: 3px 1px;
+}
+
+body.special.white_black .user__weather.blind_mode img {
+  -webkit-filter: unset;
+  filter: unset;
+}
+
 .noscroll-color {
   background: transparent;
 }
@@ -605,6 +643,7 @@ body {
   overflow-x: hidden;
 }
 
+html.loaded .preloader,
 body.loaded .preloader {
   visibility: hidden;
   opacity: 0;
@@ -854,6 +893,10 @@ video {
   }
 }
 
+.intro {
+  overflow: hidden;
+}
+
 .intro__top {
   position: relative;
 }
@@ -923,7 +966,7 @@ video {
 
 .intro__content p {
   color: #fff;
-  max-width: 627px;
+  max-width: 68%;
 }
 
 .intro__content .main-btn {
@@ -1449,7 +1492,11 @@ video {
   margin-right: 24px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
+  .header:hover .header__inner .item__menu_logo svg {
+    fill: #fff;
+  }
+
   .page-content.about800-content__text p {
     font-size: 20px;
     margin-bottom: 32px;
@@ -1457,12 +1504,6 @@ video {
 
   .page-content.about800-content__text p:last-child {
     margin-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .header:hover .header__inner .item__menu_logo svg {
-    fill: #fff;
   }
 }
 
@@ -1489,6 +1530,10 @@ video {
 }
 
 @media only screen and (max-width: 1440px) {
+  .mp_items_item_text {
+    -webkit-line-clamp: 19;
+  }
+
   .page-content h2 {
     font-size: 32px;
     margin-bottom: 23px;
@@ -1548,6 +1593,10 @@ video {
     padding-bottom: 100px;
   }
 
+  .intro__bot:after {
+    width: 80%;
+  }
+
   .tasks__grid {
     gap: 32px 220px;
   }
@@ -1592,6 +1641,10 @@ video {
 @media only screen and (max-width: 1279px) {
   .content-block__title {
     margin-bottom: 32px;
+  }
+
+  .mp_items_item_text {
+    -webkit-line-clamp: 18;
   }
 
   .footer .item__menu_sn-box {
@@ -1737,6 +1790,16 @@ video {
     width: 100%;
   }
 
+  .mp_items_list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .mp_items_item {
+    display: block;
+    height: auto;
+  }
+
   .about800-content__grid {
     grid-template-columns: 1fr;
   }
@@ -1783,8 +1846,16 @@ video {
     right: -25px;
   }
 
+  .intro__bot:after {
+    width: 90%;
+  }
+
   .intro__content h1 {
     font-size: 42px;
+  }
+
+  .intro__content p {
+    max-width: 450px;
   }
 
   .gen-sec .grid__content {
@@ -1944,6 +2015,14 @@ video {
     min-height: 90px;
   }
 
+  .blind-panel {
+    width: 100%;
+  }
+
+  .blind-panel > div {
+    margin-right: 5px;
+  }
+
   .section {
     margin-bottom: 80px;
   }
@@ -1959,6 +2038,10 @@ video {
   .swiper-3 .swiper-button-prev,
   .swiper-3 .swiper-button-next {
     display: none;
+  }
+
+  .intro__bot:after {
+    width: 100%;
   }
 
   .intro__content h1 {
@@ -2157,7 +2240,7 @@ video {
   }
 }
 
-@media (min-width: 1279px) and (max-width: 1430px) {
+@media (min-width: 1280px) and (max-width: 1430px) {
   .articles__items .articlesNew__item {
     min-height: 400px;
   }
@@ -2172,5 +2255,15 @@ video {
 @media (min-width: 1150px) and (max-width: 1280px) {
   .galashow-general-section {
     height: 1850px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .general-section_showcase-sh {
+    padding-bottom: 40px;
+  }
+
+  .galashow-general-section video {
+    margin-top: -100px;
   }
 }

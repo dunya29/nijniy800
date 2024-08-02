@@ -21,7 +21,7 @@ $(".articlesNew-main__slider").length > 0 && (swiperArticlesNewMain = new Swiper
             spaceBetween: 30,
             slidesPerView: 3,
         },
-        767: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 15,
         },

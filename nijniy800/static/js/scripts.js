@@ -1,6 +1,7 @@
 document.querySelector(".preloader") && document.addEventListener("DOMContentLoaded", (e=>{
   setTimeout((()=>{
       enableScroll(),
+      document.documentElement.classList.add("loaded")
       document.body.classList.add("loaded")
   }
   ), 100)
@@ -147,7 +148,7 @@ if (swiper3) {
             spaceBetween: 40,
             slidesPerView: 3,
         },
-        767: {
+        768: {
             slidesPerView: 3,
             spaceBetween: 20,
         },

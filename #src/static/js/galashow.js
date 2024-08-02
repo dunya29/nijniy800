@@ -52,14 +52,11 @@ function changeVideos() {
       size = "small";
     }
   }
-  $(".galashow-general-video").attr("poster",`static/videos/galashow/${size}/general-bg.jpg`)
-  /* template =
+  template =
     `
    <video id="general_video" width="1920" height="970" class="galashow-general-video" preload="auto" loop autoplay muted playsinline poster="static/videos/galashow/${size}/general-bg.jpg">
-      <source id="ogv" src="static/videos/galashow/${size}/video.ogv" type="video/ogv;">
-      <source id="mp4_265" src="static/videos/galashow/${size}/video.mp4" type="video/mp4;">
-      <source id="mp4_264" src="static/videos/galashow/${size}/video-265.mp4" type="video/mp4;">
-      <source id="webm" src="static/videos/galashow/${size}/video.webm" type="video/webm;">
+      <source src="static/videos/galashow/${size}/video.mp4" type="video/mp4;">
+      <source src="static/videos/galashow/${size}/video.webm" type="video/webm;">
     </video>
   `
 
@@ -71,7 +68,7 @@ function changeVideos() {
   else {
     wWidth = 0;
   }
- */
+
 }
 
 function calcTopOffset() {
@@ -90,7 +87,7 @@ function calcTopOffset() {
 function initSliders() {
   swiperFour = new Swiper('.swiper-container_gala-four .swiper-container', {
     observer: true,
-    observePaents:true,
+    observeParents:true,
     spaceBetween: 30,
     loop: true,
     speed: 1000,
@@ -121,7 +118,7 @@ function initSliders() {
 
   swiperFive = new Swiper('.swiper-container_gala-five .swiper-container', {
     observer: true,
-    observePaents:true,
+    observeParents:true,
     spaceBetween: 22,
     loop: true,
     speed: 1000,
@@ -150,8 +147,10 @@ function initSliders() {
     }
   });
 
-  /* Start gallery */
+  /* gallery */
   galaGalleryBottom = new Swiper(".gala-gallery-bottom", {
+    observer: true,
+    observeParents: true,
     spaceBetween: 14,
     slidesPerView: 5,
     freeMode: true,
@@ -188,16 +187,13 @@ function initSliders() {
     console.log("id", index);
     galaGalleryTop.slideTo(index);
   });
-  /* End gallery */
-
-
-  /* Start records */
+  /* records */
 
   if ($(".galashow-record-section .swiper-slide").length > 1) {
     $(".galashow-record-section").addClass("active")
     swiperRecords = new Swiper(".galashow-record-section .swiper-container", {
       observer: true,
-      observePaents:true,
+      observeParents:true,
       spaceBetween: 50,
       speed: 1000,
       navigation: {
@@ -211,15 +207,12 @@ function initSliders() {
       },
     });
   }
-
-    /* End records */
-
-  /* Start video-slider */
+  /* video-slider */
 
   if ($(".video-slider-box .swiper-slide").length > 1) {
     swiperVideos = new Swiper(".video-slider-box .swiper-container", {
       observer: true,
-      observePaents:true,
+      observeParents:true,
       spaceBetween: 25,
       slidesPerView: 3,
       speed: 1000,
@@ -249,11 +242,9 @@ function initSliders() {
     $(".video-slider__player").attr("src",urlToId($(this).data("src")));
   });
 
-
   $(document).on("click",".video-slider .pp__bg, .video-slider .pp-cross",function(){
     $(".video-slider__player").removeAttr("src");
   });
-
 
   document.onkeydown = function (evt) {
     evt = evt || window.event;
@@ -261,10 +252,6 @@ function initSliders() {
       $(".video-slider__player").removeAttr("src");
     }
 };
-
-
-
-    /* End video-slider */
 
 };
 
@@ -293,7 +280,6 @@ function urlToId(url) {
 return "https://www.youtube.com/embed/" + video_id + "?autoplay=1&modestbranding=1&iv_load_policy=3";
 }
 
-
 $(document).ready(function () {
 
   listenVideo();
@@ -303,31 +289,12 @@ $(document).ready(function () {
 
   initSliders();
 
-  $(".galashow-spoiler__more").click(function (e) {
-    e.preventDefault();
-    let parent = $(this).closest(".galashow-spoiler__cont");
-    let text = parent.find(".galashow-spoiler__text");
-    parent.toggleClass("active");
-    setTimeout(() => {
-      text.slideToggle(300);
-    }, 100);
-  });
-
   /* Start iframe */
   $(document).on('click', '.galashow-record', function (e) {
     $(this).find(".record-section__video").attr("src", urlToId($(this).data("src")));
     $(this).addClass("active");
   });
   /* End iframe */
-
-  /* Start FAQ accordeon */
-  $(document).on('click', '.tourist-faq__head', function (e) {
-    $(this).toggleClass('active').next().slideToggle();
-    $('.tourist-faq__head').not(this).removeClass('active').next().slideUp();
-  });
-  /* End FAQ accordeon */
-
-
 
 });
 
@@ -352,8 +319,6 @@ $(window).on("orientationchange", function () {
   toggleFixedBlock($(fixedBlock));
   toggleFixedLink($(fixedLink));
 });
-
-
 
 let projectsMap = !1;
 

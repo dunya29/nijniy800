@@ -6,9 +6,11 @@ body {
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden;
 }
-body.loaded .preloader {
-    visibility: hidden;
-    opacity: 0;
+html.loaded, body.loaded {
+    .preloader {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 figure, iframe, img, svg, video {
     display: block;

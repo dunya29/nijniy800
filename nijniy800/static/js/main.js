@@ -13,10 +13,10 @@ if ($(".news-swiper").length > 0) {
             prevEl: '.news-swiper .swiper-button-prev',
         },
         breakpoints: {
-            1279: {
+            1280: {
                 slidesPerView: 3
             },
-            767: {
+            768: {
                 slidesPerView: 2,
             }
         },
@@ -38,20 +38,15 @@ if ($(".swiper-container_events").length > 0) {
         navigation: {
             nextEl: '.swiper-navigation_events .swiper-button-next',
             prevEl: '.swiper-navigation_events .swiper-button-prev',
-        },
-        breakpoints: {
-            767: {
-                slidesPerView: 1
-            }
         }
     });
 }
 var swiperArticlesSymbol = !1;
 $("#articlesNew-symbol").length > 0 && (
     swiperArticlesSymbol = new Swiper("#articlesNew-symbol", {
-        slidesPerView: "auto",
+        slidesPerView: 1,
         spaceBetween: 20,
-        speed: 500,
+        speed: 800,
         loop: false,
         autoplay: {
             disableOnInteraction: true,
@@ -60,11 +55,6 @@ $("#articlesNew-symbol").length > 0 && (
         navigation: {
             nextEl: '.swiper-navigation_articles_symbol .swiper-button-next',
             prevEl: '.swiper-navigation_articles_symbol .swiper-button-prev',
-        },
-        breakpoints: {
-            767: {
-                slidesPerView: 1
-            }
         }
 }));
 
@@ -105,15 +95,17 @@ if ($('.news2-item_gallery .swiper-slide').length > 1) {
     $('.news2-item_gallery .swiper-button-next').remove();
 }
 function footermargin() {
-    if ($(document).width() <= 1440) {
-        $(".main__inner").css("margin-bottom", 0);
-        $("footer").addClass("nofixed");
-
-    } else {
-        var foterheight = $("footer").outerHeight();
-        $(".main__inner").css("margin-bottom", foterheight - 2);
-        $("footer").removeClass("nofixed");
-    }
+    setTimeout(() => {
+        if ($(document).width() <= 1440) {
+            $(".main__inner").css("margin-bottom", 0);
+            $("footer").addClass("nofixed");
+    
+        } else {
+            var foterheight = $("footer").outerHeight();
+            $(".main__inner").css("margin-bottom", foterheight - 2);
+            $("footer").removeClass("nofixed");
+        }
+    }, 300);
 };
 
 function generalSectionHide() {

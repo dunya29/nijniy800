@@ -13,15 +13,15 @@ $(document).ready(function () {
     },
     breakpoints: {
       1439: {
-        spaceBetween: 11,
         slidesPerView: 2,
+        spaceBetween: 11,
       },
-      1279: {
+      1280: {
         slidesPerView: 2,
         spaceBetween: 16,
       },
-      767: {
-        slidesPerView: 1,
+      768: {
+        slidesPerView: 2,
         spaceBetween: 20,
       },
     },
