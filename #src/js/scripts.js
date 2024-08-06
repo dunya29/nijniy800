@@ -125,7 +125,30 @@ window.addEventListener("scroll", () => {
   } 
   lastScroll = scrollPos()
 }) 
-
+//swiper1
+const swiper1 = document.querySelectorAll(".swiper-1")
+if (swiper1) {
+  swiper1.forEach(item => {
+    let itemSwiper = new Swiper(item.querySelector(".swiper"), {
+      observer: true,
+      observeParents: true,
+      grabCursor: false,
+		  allowTouchMove:false,
+		  effect: 'fade',
+		  fadeEffect: {
+		    crossFade: true
+		  },
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: true,
+      },
+      speed: 1000,
+      
+    });
+  })
+}
+//swiper3
 const swiper3 = document.querySelectorAll(".swiper-3")
 if (swiper3) {
   swiper3.forEach(item => {

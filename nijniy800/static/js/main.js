@@ -904,6 +904,7 @@ $(document).on('click', '.timeline_item', function () {
     if (!$(this).hasClass('active')) {
         $('.timeline_item').removeClass('active');
         $(this).addClass('active');
+       //$('.timeline_inner_i').scrollLeft($(this).offset().left - 15)
 
         var th_year = $(this).attr('data-year');
 
@@ -945,9 +946,12 @@ $(window).scroll(function () {
                 $('.timeline_item[data-year="' + th_year + '"]').addClass('active');
             }
 
-        })
-
-
+        })   
+        if (document.querySelector('.timeline_item.active')) {
+            let diff = document.querySelector('.timeline_item.active').getBoundingClientRect().left - document.querySelector('.timeline_wrapper_fixed .timeline_inner_i').getBoundingClientRect().left;
+            document.querySelector('.timeline_wrapper_fixed .timeline_inner_i').scrollLeft = parseInt(document.querySelector('.timeline_wrapper_fixed .timeline_inner_i').scrollLeft + diff)
+    
+        }
     }
 });
 

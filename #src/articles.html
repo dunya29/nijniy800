@@ -14,7 +14,10 @@
                 <div class="main__inner">
                     <section class="games-header">
                         <div class="section__inner general-section singleproject-section singleevent-section">
-                            <img loading="lazy" class="games-header__bg" src="static/img/articles-header__bg.jpg" alt="header__bg">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="static/img/new/articles-bg.jpg">
+                                <img class="games-header__bg" src="static/img/new/articles-bg.jpg" alt="header-bg">
+                            </picture>
                             <div class="grid__content">
                                 <div class="general-section__item">
                                     <div class="general-section__item_title">
@@ -75,7 +78,7 @@
             @@include('_cookie.html')
         </div>
     </div>
-    @@include('_fixed.html')
+
     @@include('_pageup.html')
     @@include('_pps.html')
     @@include('_js.html', {"game":true, "gala":false, "sunsets": false, "ny": false})

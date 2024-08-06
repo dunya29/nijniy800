@@ -7,13 +7,16 @@
         transform: translateY(-100%);
     }
     @media only screen and (max-width: 767px) {
-        &__inner {
-           // transition: transform .3s linear;
-        }
         &.unshow .header__inner {
             transform: translateY(-100%);
         }
     }
+}
+.header + main .timeline_wrapper.timeline_wrapper_fixed.show {
+    top: 60px;
+}
+.header.unshow + main .timeline_wrapper.timeline_wrapper_fixed.show {
+    top: 0;
 }
 .talisman-sec {
     background: url(../img/talisman-top-bg.jpg) center / cover no-repeat;

@@ -11800,9 +11800,6 @@ label#gender-error {
     transform: translateX(6px);
 }
 
-.swiper-container-fade .swiper-slide {
-    opacity: 1 !important;
-}
 
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active {
@@ -12383,7 +12380,7 @@ a.pp_.go_down_in_history>span {
     /* identical to box height, or 292% */
     color: rgb(238, 233, 225);
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 19px;
 }
 
 .timeline {

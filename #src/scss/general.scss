@@ -39,13 +39,13 @@ figure, iframe, img, svg, video {
     font-family: 'Platform';
     font-size: 70px;
     line-height: 1;
-    @media (max-width: 1430px) {
+    @media only screen and (max-width: 1430px) {
         font-size: 54px;
     }
     @media (max-width: 1279px) {
         font-size: 42px;
     }
-    @media (max-width: 767px) {
+    @media only screen and (max-width: 767px) {
         font-size: 46px;
     }
 }
@@ -87,7 +87,7 @@ figure, iframe, img, svg, video {
         font-weight: 600;
         color: #161310;
     }
-    @media (max-width: 1430px) {
+    @media only screen and (max-width: 1430px) {
         padding: 17px 30px;
     }
 }
@@ -223,17 +223,17 @@ figure, iframe, img, svg, video {
             animation: pulse 4s linear infinite both;
         }
     }
-    @media (max-width: 1400.98px) {
+    @media (max-width: 1430px) {
         &__logo {
             width: 280px;
         }
     }
-    @media (max-width: 1250.98px) {
+    @media (max-width: 1279px) {
         &__logo {
             width: 240px;
         }
     }
-    @media (max-width: 767.98px) {
+    @media (max-width: 767px) {
         &__logo {
             width: 200px;
         }
@@ -250,4 +250,13 @@ figure, iframe, img, svg, video {
         transform: scale(1);
     }
 }
-
+.mob-hidden {
+    @media only screen and (max-width: 767px) {
+        display: none!important;
+    }
+}
+.desc-hidden {
+    @media only screen and (min-width: 768px) {
+        display: none!important;
+    }
+}
