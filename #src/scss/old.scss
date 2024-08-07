@@ -811,6 +811,9 @@ body.special.white_black .user__weather.blind_mode img {
         min-height: 570px
     }
 }
+.games-header {
+    overflow: hidden;
+}
 .games-header:before {
     content: "";
     position: absolute;
@@ -820,6 +823,9 @@ body.special.white_black .user__weather.blind_mode img {
     height: 100%;
     z-index: 1;
     background: linear-gradient(180deg, rgba(6, 8, 14, .7) 37.96%, rgba(6, 8, 14, 0) 100%);
+    @media only screen and (max-width: 767px) {
+       height: 120%;
+    }
 }
 .games-header .grid__content {
     position: relative;

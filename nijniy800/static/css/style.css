@@ -637,6 +637,10 @@ body.special.white_black .user__weather.blind_mode img {
   min-height: 660px;
 }
 
+.games-header {
+  overflow: hidden;
+}
+
 .games-header:before {
   content: "";
   position: absolute;
@@ -2073,6 +2077,10 @@ video {
 
   .blind-panel > div {
     margin-right: 5px;
+  }
+
+  .games-header:before {
+    height: 120%;
   }
 
   .yards-desc .grid__content {
