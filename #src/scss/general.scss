@@ -147,6 +147,7 @@ figure, iframe, img, svg, video {
         width: 20px;
         height: 30px;
         background-color: transparent;
+        transition: all .3s linear;
     }
     .swiper-button-prev {
         left: -40px;
@@ -155,6 +156,10 @@ figure, iframe, img, svg, video {
     .swiper-button-next {
         right: -40px;
         background-image: url(../img/new/icons/swiper-3-right-btn.svg);
+    }
+    .swiper-button-disabled {
+        visibility: hidden;
+        opacity: 0;
     }
     @media only screen and (max-width: 1023px) {
         .swiper-button-prev, .swiper-button-next {

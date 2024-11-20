@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    @@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+    <body>
+        @@include('_blind.html')
+        @@include('_preloader.html')
+
+        <div class="grid">
+            <div class="grid__left">
+                @@include("_voting.html")
+                @@include("_header.html",{"main": false, "black": true})
+                <main>
+                    <div class="main__inner other__page">
+                        <section class="section search-results">
+                            <div class="container">
+                                <div class="grid__content">
+                                    <div class="search-container">
+                                        <div class="search-box">
+                                            <form class="search-elem active" action="search-results" method="get">
+                                                <div class="search-elem-button"></div>
+                                                <input class="search-elem-input" type="text" name="search" id="search" placeholder="Что вы ищете?" value="Олень">
+                                                <button type="reset" class="search-elem-reset"></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="search-results">
+                                        <div class="content-block__title">
+                                            <div class="title">
+                                                <div class="title__name">
+                                                    <h3>Результаты поиска <span id="search-counter">20</span></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-results-container">
+                                            <ul class="search-results__list">
+                                                <li class="search-row">
+                                                    <span class="search-row__content">
+                                                        <a href="#"
+                                                            class="search-row__title">
+                                                            <span class="searched">Олень</span> Олёша, Кремленок и дятел Гор: в Нижнем Новгороде выбрали талисман 800-летия
+                                                        </a>
+                                                        <span class="search-row__text">
+                                                            ...августа выбирает, кто станет талисманом предстоящего юбилея города. На выбор предложено пять вариантов: <span
+                                                                class="searched">олень</span> Олёша, мальчик Стрелка, Оленёнок-супергерой и две пары: Стрелочка и Кремлёнок, а
+                                                            также дятел...
+                                                        </span>
+                                                    </span>
+                                                </li>
+                                                <li class="search-row">
+                                                    <span class="search-row__content">
+                                                        <a href="#" class="search-row__title">
+                                                            <span class="searched">Олень</span> в прыжке стал новым логотипом Автозаводского района
+                                                        </a>
+                                                        <span class="search-row__text">
+                                                            Нижегородцы выбрали новый логотип Автозаводского района города. Им стал <span class="searched">олень</span> в
+                                                            прыжке. О результатах голосования рассказал глава Нижнего Новгорода Юрий Шалабаев на своей странице ВКонтакте.
+                                                            Чтобы выбрать...
+                                                        </span>
+                                                    </span>
+                                                </li>
+                                                <li class="search-row">
+                                                    <span class="search-row__content">
+                                                        <a href="#" class="search-row__title">
+                                                            Стальной <span class="searched">олень</span> украсил нижегородскую Стрелку
+                                                        </a>
+                                                        <span class="search-row__text">
+                                                            ...ещё одну скульптуру для Нижнего Новгорода. По его мнению, таких фигур должно быть больше в городе. <span
+                                                                class="searched">Олень</span> сделан из металла в графическом стиле. «На набережной стоит прекрасная скульптура
+                                                            оленя, смотрящего...
+                                                        </span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="content-block__more search-button-more ">
+                                                <a href="" class="content-block-more js-action-show-more">
+                                                    <span class="showcase_left_count">
+                                                        Показать еще результаты
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <!--footer-->
+                @@include('_footer.html')
+                @@include('_cookie.html')
+            </div>
+        </div>
+
+        @@include('_pageup.html')
+        @@include('_pps.html')
+        @@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+    </body>
+</html>

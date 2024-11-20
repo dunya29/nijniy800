@@ -434,6 +434,9 @@
         }
     }  
 }
+.cocoen img, .cocoen picture>img {
+    max-width: none;
+}
 .footer {
     height: auto;
     opacity: 1;
@@ -856,5 +859,28 @@ body.special.white_black .user__weather.blind_mode img {
             max-width: 250px;
             margin: 0 auto;
         }
+    }
+}
+.item_gallery_wrapper {
+    position: relative;
+    .swiper-container {
+        position: static;
+    }
+}
+.eventpass-modal__text {
+    p {
+        margin-bottom: 16px;
+    }
+    ul, ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    ol li {
+        list-style: decimal;
+    }
+    ul li {
+        list-style: disc;
     }
 }

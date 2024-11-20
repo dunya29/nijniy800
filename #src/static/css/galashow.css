@@ -2582,7 +2582,7 @@
 }
 
 .my-hint {
-  display: inline-block;
+  display: none;
   position: relative;
   width: auto;
   vertical-align: middle;

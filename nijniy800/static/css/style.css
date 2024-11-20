@@ -363,6 +363,11 @@
   margin: 24px auto;
 }
 
+.cocoen img,
+.cocoen picture > img {
+  max-width: none;
+}
+
 .footer {
   height: auto;
   opacity: 1;
@@ -671,6 +676,34 @@ body.special.white_black .user__weather.blind_mode img {
   margin: 0 auto;
 }
 
+.item_gallery_wrapper {
+  position: relative;
+}
+
+.item_gallery_wrapper .swiper-container {
+  position: static;
+}
+
+.eventpass-modal__text p {
+  margin-bottom: 16px;
+}
+
+.eventpass-modal__text ul,
+.eventpass-modal__text ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.eventpass-modal__text ol li {
+  list-style: decimal;
+}
+
+.eventpass-modal__text ul li {
+  list-style: disc;
+}
+
 .noscroll-color {
   background: transparent;
 }
@@ -818,6 +851,8 @@ video {
   width: 20px;
   height: 30px;
   background-color: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .swiper-3 .swiper-button-prev {
@@ -828,6 +863,11 @@ video {
 .swiper-3 .swiper-button-next {
   right: -40px;
   background-image: url(../img/new/icons/swiper-3-right-btn.svg);
+}
+
+.swiper-3 .swiper-button-disabled {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .mb-60 {
@@ -1288,6 +1328,11 @@ video {
   margin: 0 24px 0 0;
 }
 
+.directs--team-1 .item-direct:nth-child(4),
+.directs--team-1 .item-direct:nth-child(5) {
+  grid-column-end: span 3;
+}
+
 .directs__grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -1298,11 +1343,6 @@ video {
   padding: 24px 40px;
   border: 2px solid #F3F3F3;
   grid-column-end: span 2;
-}
-
-.item-direct:nth-child(4),
-.item-direct:nth-child(5) {
-  grid-column-end: span 3;
 }
 
 .item-direct__icon {
@@ -1555,6 +1595,12 @@ video {
   }
 }
 
+@media only screen and (max-width: 1899px) {
+  .intro__bot:after {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1699px) {
   .main__inner.other__page section:first-child {
     padding-top: 210px;
@@ -1651,10 +1697,6 @@ video {
 
   .section:last-child {
     padding-bottom: 100px;
-  }
-
-  .intro__bot:after {
-    width: 80%;
   }
 
   .tasks__grid {
@@ -2166,6 +2208,11 @@ video {
     margin: 0 16px 0 0;
   }
 
+  .directs--team-1 .item-direct:nth-child(4),
+  .directs--team-1 .item-direct:nth-child(5) {
+    grid-column-end: span 1;
+  }
+
   .directs__grid {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -2189,11 +2236,6 @@ video {
     height: 50px;
     padding: 12px;
     margin: 0 16px 0 0;
-  }
-
-  .item-direct:nth-child(4),
-  .item-direct:nth-child(5) {
-    grid-column-end: span 1;
   }
 
   .tasks .text-center {

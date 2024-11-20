@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+	@@include("_head2.html",{"eco": false,"yards": true, "video": false})
+
+<body>
+	@@include('_blind.html')
+    @@include('_preloader.html')
+
+    <div class="grid">
+	    <div class="grid__left">
+	       	@@include("_voting.html")
+		    @@include('_header.html', {"main": false,"black": false})
+		    <main>					
+			    <div class="main__inner yards-page broun-body">			
+				    <section>
+				    	<div class="section__inner general-section general-section_showcase general-section_i header-background-img yards-logo-bg">			
+				    		<div class="grid__content">			
+				    			<div class="general-section__item general-section__item_color-dark">			
+				    				<div class="general-section__item_title">
+				    					<h1>
+				    						<img width="332" height="58" src="static/img/yards/yards-title.svg" alt="yards-title.svg">
+				    					</h1>
+				    				</div>
+				    				<div class="general-section__item_text">
+				    					<p class="large">Празднование юбилея Нижнего пройдет не только в центре города, но и затронет каждый район города. «Дворы 800» станут локальными площадками для мероприятий, своеобразными примерами того, какой должна быть атмосфера внутри кварталов.
+			                            <br><br>Создавайте уникальное пространство вместе с соседями, делайте двор уютным и комфортным!</p>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </section>			
+				    <section class="yards-descripton">
+				    	<div class="container">
+				    		<div class="grid__content">
+				    			<div class="yards-descripton_content">
+				    				<p>
+				    				<p>В 2020 году во время празднования 799-го Дня города с помощью лотереи выбрали в общей сложности <a href="http://vk.com/@depkultnn-uchast-uyutniy"><strong>100 дворов</strong></a> в каждом районе. Эти пространства стали участниками <a href="http://уютныйдворнн.рф/"><strong>проекта «Уютный двор»</strong></a> и смогли улучшить внешний вид квартала.</p>			
+			                        <p>В рамках подготовки к 800-летию Нижнего Новгорода жители «Уютных дворов» могли подать заявку и также получить <strong>статус «Двор 800»</strong>.</p>			
+				    			</div>
+				    		</div>
+				    	</div>
+				    </section>
+				    <section class="yards-info-section">
+				    	<div class="grid__content">
+				    		<div class="yards-info-section__content">
+				    			<div class="yards-info-section__body">
+				    				<h4 class="yards-info-section__title">В проекте «Дворы 800» приняли участие</h4>
+				    				<p class="large yards-info-section__text"></p>
+				    				<div class="yards-info-section__counters">
+				    					<span class="color-blue"><span class="yards-info-section__count">8</span> районов</span>
+				    					<span class="color-blue"><span class="yards-info-section__count">25</span>  дворов</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="yards-info-section__img"></div>
+				    </section>		
+				    <section class="yardfin-section">
+				    	<div class="container">
+				    		<div class="grid__content">			
+				    			<div class="yardfin">
+				    				<div class="yardfin-title">
+				    					<div class="yardfin-title__txt">Адресная программа</div>
+				    					<div class="yardfin-title__switches">
+				    						<div class="yardfin-title-switch active" data-yardmap="1">
+				    							<div class="yardfin-title-switch__ico">
+				    								<img src="static/img/talisman/yardfin-title-switch-1.svg" alt="">
+				    								<img src="static/img/talisman/yardfin-title-switch-1-a.svg" alt="">
+				    							</div>
+				    							<div class="yardfin-title-switch__txt">на карте</div>
+				    						</div>
+				    						<div class="yardfin-title-switch" data-yardmap="2">
+				    							<div class="yardfin-title-switch__ico">
+				    								<img src="static/img/talisman/yardfin-title-switch-2.svg" alt="">
+				    								<img src="static/img/talisman/yardfin-title-switch-2-a.svg" alt="">
+				    							</div>
+				    							<div class="yardfin-title-switch__txt">списком</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    				<div class="yardfin-content">
+				    					<div class="yardfin-content__item" data-yardmap="1">
+				    						<div id="yardsMap" class="yardfin-content-map"></div>
+				    					</div>
+				    					<div class="yardfin-content__item" data-yardmap="2" style="display:none;">
+				    						@@include("_yards.html")		
+					    				</div>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>			
+				    </section>
+					<section>
+			        	<div class="container">
+			        		<div class="grid__content">
+			        			<div class="policy__warning">
+			        				<div class="policy__warning-head">
+			        					<div class="policy__warning-ico">
+			        						<img src="static/img/warn_pink.svg" alt="warn_pink">
+			        					</div>
+			        					<div class="policy__warning-title">
+			        						Соглашение об условиях размещения информации, изображений, <br>
+			        						объектов авторского права и иных результатов интеллектуальной деятельности
+			        					</div>
+			        				</div>
+			        				<div class="policy__warning-body">
+			        					<div class="policy__warning-text">
+			        						Владелец настоящего сайта (далее –Сайт) не контролирует и не несет ответственности за действия
+			        						Пользователей поразмещениюими информации, изображений, объектов авторского права и смежных прав,
+			        						иных результатов интеллектуальной деятельностии приравненных к ним средств индивидуализации
+			        						(далее –Объекты) в соответствующих разделах Сайта. Пользователь самостоятельно несет
+			        						полнуюответственность за любые указанные Объекты, которые он размещает на Сайте, и их
+			        						содержание, включая гражданско-правовую, административную и уголовную ответственность. Ни при
+			        						каких обстоятельствах Владелец Сайта или его представители не несут ответственность перед
+			        						Пользователями или перед любыми третьими лицами, а также не разделяют ответственность
+			        						Пользователя,за любой косвенный, случайный, неумышленный ущерб, включая упущенную выгоду, вред
+			        						чести, достоинству или деловой репутации, вызванный в связи с размещением Объектов
+			        						Пользователями в разделах Сайта, или любое нарушение действующего законодательства, допущенное
+			        						Пользователем при размещении Объектов на Сайте или в связи с таковым размещением,даже если
+			        						Владелец Сайта предупреждал Пользователя или указывал на возможность такого вредаили нарушения.
+			        					</div>
+			        				</div>
+			        			</div>
+			        		</div>
+			        	</div>
+			        </section>
+				    <section>
+				    	<div class="container">
+				    		<div class="grid__content" id="scroll-anch-1">
+				    			<div class="content-block__title">
+				    				<div class="title">
+				    					<div class="title__name">
+				    						<h3>История конкурса</h3>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="talisman-stages yards-edition">
+				    				<div class="talisman-stages__tabs">
+				    					<div class="talisman-stages__tabs_item" data-tab="1">Этап 1</div>
+				    					<div class="talisman-stages__tabs_item" data-tab="2">Этап 2</div>
+				    					<div class="talisman-stages__tabs_item" data-tab="3">Этап 3</div>
+				    					<div class="talisman-stages__tabs_item active" data-tab="4">Финал</div>
+				    				</div>
+				    				<div class="talisman-stages__content">
+				    					<div class="talisman_interactive"></div>
+					    				<div class="talisman-stages__content_item double" data-tab="1" style="display: none;">
+					    					<div class="item-box">
+					    						<div class="talisman-content-item__left end">
+					    							<div class="talisman-content-item__left_name">
+					    								<span>Этап 1</span>
+					    								<span>7 - 11 сентября 2020</span>
+					    							</div>
+					    							<div class="talisman-content-item__left_status">
+					    								<div class="status__img"></div>
+					    								<div class="status__text">
+					    									<span>Статус: </span>
+					    									<span>Завершён</span>
+					    								</div>
+					    							</div>
+					    						</div>
+					    						<div class="talisman-content-item__right">
+					    							<div class="talisman-content-item__right_descr">
+					    								<span>Старт программы «Двор 800»</span>
+					    								<span>На этапе реализации интерактивных субботников в рамках программы «Уютный
+					    									двор» Волонтёры 800 познакомят жителей с направлениями подготовки юбилея
+					    									города в 2021 году, а также расскажут более подробно о проекте «Двор 800»,
+					    									условиях участия в конкурсе и возможностях для дворов - победителей.</span>
+					    							</div>
+					    						</div>			
+					    					</div>			
+					    				</div>
+						    			<div class="talisman-stages__content_item double" data-tab="2" style="display: none;">
+						    				<div class="item-box">
+						    					<div class="talisman-content-item__left end">
+						    						<div class="talisman-content-item__left_name">
+						    							<span>Этап 2</span>
+						    							<span>7 - 27 сентября 2020</span>
+						    						</div>
+						    						<div class="talisman-content-item__left_status">
+						    							<div class="status__img"></div>
+						    							<div class="status__text">
+						    								<span>Статус: </span>
+						    								<span>Завершён</span>
+						    							</div>
+						    						</div>
+						    					</div>			    
+						    					<div class="talisman-content-item__right">
+						    						<div class="talisman-content-item__right_descr">
+						    							<span>Прием заявок на конкурс</span>
+						    							<span>Принять участие в конкурсе на звание Двора 800 может каждый «Уютный двор».
+						    								Обращение должно быть коллективным (выражать общее мнение жителей двора), от
+						    								одного двора - одна заявка.Для этого нужно заполнить форму на портале. К
+						    								заявке важно приложить фото (и по желанию видео) и эссе, объясняющее, почему
+						    								именно ваш двор достоин звания Двор 800. Расскажите историю вашего двора,
+						    								поделитесь вашими традициями или интересными историями из жизни двора и его
+						    								жителей. Главное - история должна рассказывать и выделять ваш двор среди
+						    								других дворов.</span>			    
+						    						</div>						    						
+						    					</div>
+						    				</div>			    
+						    			</div>
+						    			<div class="talisman-stages__content_item double" data-tab="3" style="display: none;"> 
+							    			<div class="item-box">
+							    			    <div class="talisman-content-item__left end">
+							    			    	<div class="talisman-content-item__left_name">
+							    			    		<span>Этап 3</span>
+							    			    		<span>28 сентября - 9 октября 2020</span>
+							    			    	</div>
+							    			    	<div class="talisman-content-item__left_status">
+							    			    		<div class="status__img"></div>
+							    			    		<div class="status__text">
+							    			    			<span>Статус: </span>
+							    			    			<span>Завершён</span>
+							    			    		</div>
+							    			    	</div>
+							    			    </div>			
+							    			    <div class="talisman-content-item__right">
+							    			    	<div class="talisman-content-item__right_descr">
+							    			    		<span>Народное голосование за «Двор 800»</span>
+							    			    		<span>Двор 800 выберут сами жители города. Итоги голосования за самый интересный
+							    			    			проект для улучшения жизни во дворе будут опубликованы на портале 10
+							    			    			октября.</span>
+							    			    	</div>
+							    			    </div>
+							    		    </div>
+											<div class="vote-ranges-wraper poll_wrap">
+												@@include("_yards.html")
+											</div>
+										</div>
+										<div class="talisman-stages__content_item double" data-tab="4" style="display: block;"> 
+											<div class="item-box">
+											    <div class="talisman-content-item__left active">
+											    	<div class="talisman-content-item__left_name">
+											    		<span>Финал</span>
+											    		<span></span>
+											    	</div>
+											    	<div class="talisman-content-item__left_status">
+											    		<div class="status__img"></div>
+											    		<div class="status__text">
+											    			<span>Статус: </span>
+											    			<span>Активный</span>
+											    		</div>
+											    	</div>
+											    </div>			
+											    <div class="talisman-content-item__right">
+											    	<div class="talisman-content-item__right_descr">
+											    		<p>Завершилось открытое народное голосование конкурса «Двор 800».</p>
+											    		<p>Из 100 дворов заявки на конкурс оставили только 25. Планировалось, что в каждом районе выберут по одному месту, которое получит статус «Двор 800», но по результатам активного участия жителей в проекте организаторы решили наградить почётным званием все дворы-участники.</p>
+											    		<p>Поздравляем местных жителей!</p>			
+											    	</div>			
+											    </div>
+										    </div>
+									    </div>
+								    </div>
+						        </div>
+					        </div>
+			            </div>
+			        </section>		
+			        <section class="section yards-desc">
+			        	<div class="container">
+			        		<div class="grid__content">
+								<div class="yards-desc__img">
+									<img src="static/img/new/yards-desc-img.svg" alt="">
+								</div>
+								<div class="content-block">
+                                    <div class="content-block__title">
+                                        <div class="title">
+                                            <div class="title__name">
+                                                <h3>Статус «Двор 800»</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-content about800-content__text">
+                                    	<p>Группы инициативных жителей от каждого двора получили сертификат о присвоении их придомовой территории особого статуса «Двор 800».</p>
+			        				    <p>В рамках празднования официальных городских событий во Дворах 800 в течение 2021 года пройдет ряд специализированных мероприятий для жителей. Узнать «Двор 800» можно будет по новым функциональным объектам, брендированным символикой юбилея.</p>
+			             		    </div>
+                                </div>
+			        		</div>
+			        	</div>
+			        </section>
+			    </div>
+				<div class="pp pp_simple pp_simple_rules pp_simple_test pp_simple_yard" data-mod="pp_simple_yard">
+					<div class="pp__bg"></div>
+					<div class="pp__content pp__content_simple">
+						<div class="pp-content pp-content_simple">
+							<div class="pp-cross"></div>
+							<div class="content-block__title content-block__title_bordernone">
+								<div class="content-block__yard"><span></span></div>
+								<div class="content-block__adr"></div>
+							</div>
+							<div class="pp-content__text">
+								<div class="tal_pp_gallery">
+									<div class="swiper-container swiper-container_yard">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"></div>
+										</div>
+									</div>
+									<div class="swiper-navigation swiper-navigation_yard">
+										<div class="swiper-button swiper-button-prev swiper-button-disabled"></div>
+										<div class="swiper-button swiper-button-next"></div>
+									</div>
+									<div class="swiper-pagination swiper-pagination_yard"></div>
+								</div>
+								<div class="pp_c_text"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </main>
+		    <!--footer-->
+		    @@include('_footer.html')
+		    @@include('_cookie.html')
+	    </div>
+    </div>
+
+    @@include('_pageup.html')
+    @@include('_pps.html')
+    @@include('_js2.html', {"eco":false, "yards":true, "video": false})
+    @@include('_yardsMap.html')
+</body>
+
+</html>

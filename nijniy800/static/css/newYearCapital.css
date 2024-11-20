@@ -471,6 +471,7 @@
 .sunsets-events-slide__title {
 	font-size: 34px;
 	line-height: 38px;
+	padding-right: 100px;
 }
 
 .sunsets-events-swiper-navigation .swiper-button {
@@ -1052,6 +1053,7 @@
 	.sunsets-events-slide__title {
 		font-size: 18px;
 		line-height: 20px;
+		padding-right: 70px;
 	}
 
 	.sunsets-weather__content {
@@ -2740,9 +2742,9 @@ input:checked~.grid-question-item__border {
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
-
 .sunsets-events-slide:before {
 	content: "";
+	display: block;
 	position: absolute;
 	background: url(../img/sunsets/watch-btn.svg);
 	width: 100px;
@@ -3278,10 +3280,6 @@ input:checked~.grid-question-item__border {
   }
   
   .new-year-events .sunsets-events__switcher{
-      display: none;
-  }
-  
-  .new-year-events .sunsets-events-slide:before{
       display: none;
   }
   
@@ -4357,4 +4355,33 @@ img.rules-faq-icon {
 .tourist-faq__inner.rules {
     margin: 0 0 35px;
 }
+}
+.video_wrap_pre:before, .video_wrap_pre:after {
+	content: "";
+	display: block;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transition: .3s ease-out;
+	-o-transition: .3s ease-out;
+	z-index: 1;
+}
+.video_wrap_pre:before {
+    width: 70px;
+    height: 70px;
+	border-radius: 50%;
+	background-color:  #161310;
+}
+@media (max-width: 1023px) {
+    .video_wrap_pre:before {
+        width: 44px;
+        height: 44px;
+    }
+}
+.video_wrap_pre:after {
+	width: 24px;
+	height: 24px;
+	background: url(../img/galashow/video-slider-button.svg) center/ contain no-repeat;
 }

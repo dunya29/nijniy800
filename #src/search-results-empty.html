@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    @@include('_head.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+
+    <body>
+        @@include('_blind.html')
+        @@include('_preloader.html')
+
+        <div class="grid">
+            <div class="grid__left">
+                @@include("_voting.html")
+                @@include("_header.html",{"main": false, "black": true})
+                <main>
+                    <div class="main__inner other__page">
+                        <section class="section search-results">
+                            <div class="container">
+                                <div class="grid__content">
+                                    <div class="search-container">
+                                        <div class="search-box">
+                                            <form class="search-elem active" action="search-results" method="get">
+                                                <div class="search-elem-button"></div>
+                                                <input class="search-elem-input" type="text" name="search" id="search" value="Олень" placeholder="Что вы ищете?">
+                                                <button type="reset" class="search-elem-reset"></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="search-results">
+                                        <div class="content-block__title">
+                                            <div class="title">
+                                                <div class="title__name">
+                                                    <h3>Результаты поиска <span id="search-counter"></span></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-results-empty">
+                                            <p class="search-results-empty__title">Увы, мы ничего не смогли найти на нашем сайте по вашему запросу</p>
+                                            <div class="search-results-empty__other">
+                                                <p class="search-results-empty__other-title">Возможно вам будет интересно:</p>
+                                                <ul class="search-results-empty__other-list">
+                                                    <li class="search-results-empty__other-item">
+                                                        <a href="#">Главное — сохранить облик Чкаловской
+                                                            лестницы</a>
+                                                    </li>
+                                                    <li class="search-results-empty__other-item">
+                                                        <a href="#">Олень
+                                                            Олёша, Кремленок и дятел Гор: в Нижнем Новгороде выбрали талисман 800-летия</a>
+                                                    </li>
+                                                    <li class="search-results-empty__other-item">
+                                                        <a href="#">В любой момент мы можем
+                                                            открыть новые факты о здании «Маяка»</a>
+                                                    </li>
+                                                    <li class="search-results-empty__other-item">
+                                                        <a href="#">Нижегородскому аэропорту “Стригино” присвоено имя летчика Валерия Чкалова</a>
+                                                    </li>
+                                                    <li class="search-results-empty__other-item">
+                                                        <a href="#">В Нижнем Новгороде прошло первое заседание экспертного совета проекта «Команда
+                                                            800»</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <!--footer-->
+                @@include('_footer.html')
+                @@include('_cookie.html')
+            </div>
+        </div>
+
+        @@include('_pageup.html')
+        @@include('_pps.html')
+        @@include('_js.html', {"game":false, "gala":false, "sunsets": false, "ny": false})
+    </body>
+</html>

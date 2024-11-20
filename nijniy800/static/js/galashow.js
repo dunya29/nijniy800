@@ -256,28 +256,36 @@ function initSliders() {
 };
 
 function urlToId(url) {
-  var video_id, ampersandPosition;
-  if (url) {
-    if (url.indexOf("https://youtu.be/") !== -1) {
-    try {
-      video_id = url.split('be/')[1];
-      ampersandPosition = video_id.indexOf('&');
-      if (ampersandPosition != -1) {
-        video_id = video_id.substring(0, ampersandPosition);
-      }
-    } catch (error) {}
+  if (url && url.indexOf("https://vk.com/") !== -1) { 
+    if (url.indexOf("autoplay") !== -1) {
+      return url
+    } else {
+      return url + "&autoplay=1"
+    }
+    
   } else {
-    try {
-      video_id = url.split('v=')[1];
-      ampersandPosition = video_id.indexOf('&');
-      if (ampersandPosition != -1) {
-        video_id = video_id.substring(0, ampersandPosition);
-      }
-    } catch (error) {}
+    var video_id, ampersandPosition;
+    if (url) {
+      if (url.indexOf("https://youtu.be/") !== -1) {
+      try {
+        video_id = url.split('be/')[1];
+        ampersandPosition = video_id.indexOf('&');
+        if (ampersandPosition != -1) {
+          video_id = video_id.substring(0, ampersandPosition);
+        }
+      } catch (error) {}
+    } else {
+      try {
+        video_id = url.split('v=')[1];
+        ampersandPosition = video_id.indexOf('&');
+        if (ampersandPosition != -1) {
+          video_id = video_id.substring(0, ampersandPosition);
+        }
+      } catch (error) {}
+    }
+    } else video_id = null;
+    return "https://www.youtube.com/embed/" + video_id + "?autoplay=1&modestbranding=1&iv_load_policy=3";
   }
-} else video_id = null;
-// console.log("video_id",video_id);
-return "https://www.youtube.com/embed/" + video_id + "?autoplay=1&modestbranding=1&iv_load_policy=3";
 }
 
 $(document).ready(function () {
